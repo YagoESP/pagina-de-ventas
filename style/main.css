@@ -1,0 +1,273 @@
+/*====================
+=======Structure======
+======================*/
+
+header{
+   background: black;
+}
+
+main{
+   background: black;
+}
+
+/*====================
+========Columns=======
+======================*/
+
+.desktop-one-column{
+    width: 100%;
+}
+
+.desktop-one-column .column{
+    width: 100%;
+}
+
+.desktop-two-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns .column{
+    width: 48%;
+}
+
+.desktop-two-columns-aside{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-aside .column-aside{
+    width: 30%;
+}
+
+.desktop-two-columns-aside .column-main{
+    width: 65%;
+}
+
+.desktop-two-columns-inline{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-inline .column{
+    width: 48%;
+}
+
+.desktop-two-columns-inline .column div{
+    display: flex;
+    margin-right: 1em;
+}
+
+.desktop-three-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-three-columns .column{
+    width: 30%;
+}
+
+.desktop-four-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-four-columns .column{
+    width: 22%;
+}
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: Tungsten-Bold,arial,georgia,sans-serif;
+}
+
+h5, h6 {
+    font-family: Tungsten-Bold,arial,georgia,sans-serif;
+}
+
+a, td, p, button, span{
+    font-family: Tungsten-Bold,arial,georgia,sans-serif;
+    text-decoration: none;
+}
+
+
+/*====================
+========Image=========
+======================*/
+
+img {
+    max-width: 100%;
+}
+
+/*====================
+========Header=========
+======================*/
+
+.header-main{
+    background: black;
+    padding: 1%;
+    width: 90%;
+    margin: 0rem 1rem 0rem 1rem;
+    
+    
+}
+
+.header-main-logo {
+    display: flex;
+    justify-content: start;
+    
+    width: 70%;
+    margin-left:  auto;
+    margin-top: 1.3rem;
+}
+
+.header-main-logo-title h1 svg{
+    width: 2.3rem;
+}
+
+.header-main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-menu button{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 1rem;
+}
+
+.header-main-menu-begin button{
+    background: black;
+}
+
+.header-main-menu-login button{
+    background: black;
+}
+
+.header-main-menu-register button{
+    background: #2A70D5;
+    border-radius: 0.7rem;
+    border: 1px solid black;
+    transition: 0.2s all;
+}
+
+.header-main-menu-register button:hover{
+    background: red;
+}
+
+
+
+/*====================
+========HeaderSlider=========
+======================*/
+
+.header-slider{
+    
+}
+
+.header-slider-content{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.header-slider-content {
+
+}
+
+.header-slider-content-text p{
+    position: absolute;
+    font-size: 4rem;
+    top: 20%;
+    left: 10%;
+    width: 40%;
+    
+}
+
+.header-slider-content-button button{
+    background: #2A70D5;   
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+}
+
+.header-slider-content-button button:hover{
+    background: #FF9A33;
+    transition: 0.2s all;
+}
+
+/*====================
+========HomeCards=========
+======================*/
+
+.home{
+    background: black;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.home-cards{
+    width: 90%;
+    margin: auto 2.5rem auto 2.5rem;
+    
+}
+
+.home-cards-title h2{
+    color: #2A70D5;
+}
+
+.home-cards-one {
+    
+}
+
+.home-cards-two{
+    
+}
+
+.home-cards-tree{
+    
+}
+
+.home-cards-four{
+    
+}
+
+/*====================
+========HomeSlider=========
+======================*/
+
+.home-slider{
+    width: 100%;
+    margin: 1rem auto;
+    
+}
+
+.home-slider-text p{
+    font-size: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+    width: 80%;
+    
+}
+
+/*====================
+========Footer=========
+======================*/
