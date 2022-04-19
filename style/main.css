@@ -220,22 +220,35 @@ img {
 
 .home{
     background: black;
-    padding-top: 3rem;
-    text-align: center;
+    
 }
 
 .home-cards{
-    width: 90%;
     margin: auto 2.5rem auto 2.5rem;
+    padding-top: 3rem;
+    text-align: center;
     
+}
+
+.home-cards-title{
+    margin-bottom: 3rem;
 }
 
 .home-cards-title h2{
     color: #2A70D5;
+    
 }
+
+
 
 .home-cards-one {
     
+}
+
+.home-cards-one-content{
+    border: 1px solid white;
+   
+    border-top: none;
 }
 
 .home-cards-two{
@@ -257,12 +270,12 @@ img {
 .home-slider{
     width: 100%;
     margin: 1rem auto;
-    
+    margin-top: 3rem;
 }
 
 .home-slider-text p{
     font-size: 4rem;
-    margin-top: 3rem;
+    
     text-align: center;
     width: 80%;
     
