@@ -1,0 +1,79 @@
+$primary-color: black;
+$second-color: white;
+
+.home{
+    background: $primary-color;
+
+    .slider{
+        
+        .slider-image {
+            position: relative;
+            display: inline-block;
+        }    
+
+        .slider-title {
+            position: absolute;
+            top: 35%;
+            left: 10%;
+            width: 40%;
+
+            h2{
+                font-size: 3rem;
+                font-weight: 900;
+            }
+        }
+    
+        .slider-button button{
+            background: #2A70D5;  
+            color: white; 
+            padding: 1rem 2.5rem 1rem 2.5rem;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            border: 1px solid black;
+            border-radius: 0.7rem;
+            font-size: 2rem;
+            font-weight: 600;
+
+            &:hover{
+                background: #FF9A33;
+                transition: 0.2s all;
+            }
+        }
+        
+    }
+    
+
+    .home-cards{
+        margin: auto 2.5rem auto 2.5rem;
+        padding-top: 3rem;
+        text-align: center;
+
+        .home-cards-title h2{
+            margin-bottom: 3rem;
+            color: #2A70D5;
+        }
+
+        .home-cards-element {
+            border: 1px solid white;
+                border-top: none;
+            .home-cards-one-content{
+                border: 1px solid white;
+                border-top: none;
+            }
+        }
+    }
+
+    .home-slider{
+        width: 100%;
+        margin: 1rem auto;
+        margin-top: 3rem;
+
+        .home-slider-text p{
+            font-size: 4rem;
+            text-align: center;
+            width: 80%;
+            
+        }
+    }
+}
