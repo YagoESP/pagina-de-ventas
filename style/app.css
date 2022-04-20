@@ -423,6 +423,10 @@ a:hover, a:focus {
   outline-offset: 0;
 }
 
+body {
+  background: #FF6347;
+}
+
 header {
   background: black;
 }
@@ -469,6 +473,32 @@ header .header-main .header-main-menu .header-main-menu-element-active button {
 }
 header .header-main .header-main-menu .header-main-menu-element-active button:hover {
   background: red;
+}
+
+footer {
+  background-image: url(/images/hocico.jpg);
+  background-size: cover;
+  background-position: center 40%;
+}
+footer .footer-element {
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+footer .footer-element .footer-element-copyright {
+  width: 50%;
+}
+footer .footer-element .footer-element-copyright h5 {
+  font-size: 2.5rem;
+}
+footer .footer-element .footer-element-socialmedia {
+  width: 70%;
+  margin-left: auto;
+}
+footer .footer-element .footer-element-socialmedia svg {
+  width: 2.7rem;
+  padding-left: 1.5rem;
 }
 
 .desktop-five-columns {
@@ -564,29 +594,104 @@ header .header-main .header-main-menu .header-main-menu-element-active button:ho
 .home .home-cards {
   margin: auto 2.5rem auto 2.5rem;
   padding-top: 3rem;
-  text-align: center;
+  padding-bottom: 2rem;
+  border-top: #FF6347 1rem solid;
+}
+.home .home-cards .home-cards-title {
+  margin-bottom: 3rem;
 }
 .home .home-cards .home-cards-title h2 {
-  margin-bottom: 3rem;
-  color: #2A70D5;
+  color: #80D99D;
+  text-align: center;
+  font-weight: 600;
 }
 .home .home-cards .home-cards-element {
-  border: 1px solid white;
-  border-top: none;
+  background: white;
+  text-align: center;
+  padding-bottom: 2rem;
+  transition: all 0.4s;
+  border-radius: 0.5rem;
+  max-height: 100%;
 }
-.home .home-cards .home-cards-element .home-cards-one-content {
-  border: 1px solid white;
-  border-top: none;
+.home .home-cards .home-cards-element:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+.home .home-cards .home-cards-element .home-cards-element-image {
+  padding-bottom: 2rem;
+}
+.home .home-cards .home-cards-element .home-cards-element-image img {
+  border-radius: 0.3rem;
+}
+.home .home-cards .home-cards-element .home-cards-element-title h3 {
+  color: orange;
+}
+.home .home-cards .home-cards-element .home-cards-element-description p {
+  color: black;
+  padding-top: 2rem;
+  width: 70%;
+  margin: auto;
+  font-weight: 400;
 }
 .home .home-slider {
   width: 100%;
   margin: 1rem auto;
   margin-top: 3rem;
 }
-.home .home-slider .home-slider-text p {
-  font-size: 4rem;
-  text-align: center;
+.home .home-slider .home-slider-text {
+  margin-top: 6rem;
   width: 80%;
+}
+.home .home-slider .home-slider-text .home-slider-text-title {
+  padding-bottom: 1rem;
+}
+.home .home-slider .home-slider-text .home-slider-text-title h3 {
+  font-size: 2rem;
+  color: #00AEE6;
+}
+.home .home-slider .home-slider-text .home-slider-text-description p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.shop {
+  padding-top: 2rem;
+}
+.shop .shop-categories {
+  width: 35%;
+  margin: auto;
+  padding-top: 3.4rem;
+}
+.shop .shop-categories .shop-categories-title {
+  margin-bottom: 1rem;
+}
+.shop .shop-categories .shop-categories-title h2 {
+  font-weight: 700;
+}
+.shop .shop-categories .shop-categories-element {
+  margin-bottom: 0.5rem;
+}
+.shop .shop-articles {
+  width: 85%;
+  margin: auto;
+  padding: 4rem;
+  border-left: 1rem black solid;
+}
+.shop .shop-articles .shop-articles-information {
+  margin-bottom: 2.5rem;
+}
+.shop .shop-articles .shop-articles-information .shop-articles-information-comentary {
+  text-align: start;
+}
+.shop .shop-articles .shop-articles-information .shop-articles-information-comentary p {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.shop .shop-articles .shop-articles-information .shop-articles-information-select {
+  text-align: end;
+}
+.shop .shop-articles .shop-articles-information .shop-articles-information-select .perros {
+  padding: 0.7rem 4rem 0.7rem 4rem;
 }
 
 /*# sourceMappingURL=app.css.map */

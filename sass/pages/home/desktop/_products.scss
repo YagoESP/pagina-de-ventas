@@ -1,0 +1,66 @@
+.shop{
+    padding-top: 2rem;
+
+    .shop-categories{
+        width: 35%;
+        margin: auto;
+        padding-top: 3.4rem;
+        
+
+        .shop-categories-title{
+            margin-bottom: 1rem;
+
+            h2{
+                font-weight: 700;
+            }
+        }
+
+        .shop-categories-element{
+            margin-bottom: 0.5rem;
+        }
+    }
+
+
+    .shop-articles{
+        width: 85%;
+        margin: auto;
+        padding: 4rem;
+        border-left: 1rem black solid;
+        
+        .shop-articles-information{
+            margin-bottom: 2.5rem;
+            .shop-articles-information-comentary{
+                text-align: start;
+                p{
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .shop-articles-information-select{
+                text-align: end;
+                .perros{
+                    
+                    padding: 0.7rem 4rem 0.7rem 4rem;
+                    
+                }
+            }
+        }
+
+        .shop-articles-sections{
+            .shop-articles-sections-cards{
+                .shop-articles-sections-cards-content{
+                    .shop-articles-sections-cards-content-image{
+
+                    }
+                    .shop-articles-sections-cards-content-title{
+                        
+                    }
+                    .shop-articles-sections-cards-content-button{
+                        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 $primary-color: black;
 $second-color: white;
+$thrid-color:#00AEE6;
 
 .home{
     background: $primary-color;
@@ -47,19 +48,55 @@ $second-color: white;
     .home-cards{
         margin: auto 2.5rem auto 2.5rem;
         padding-top: 3rem;
-        text-align: center;
+        padding-bottom: 2rem;
+        border-top: #FF6347 1rem solid ;
 
-        .home-cards-title h2{
+        .home-cards-title{
+            
             margin-bottom: 3rem;
-            color: #2A70D5;
+            
+            h2{
+                color: #80D99D;
+                text-align: center;
+                font-weight: 600;
+            }
         }
 
         .home-cards-element {
-            border: 1px solid white;
-                border-top: none;
-            .home-cards-one-content{
-                border: 1px solid white;
-                border-top: none;
+            background: white;
+            text-align: center;
+            padding-bottom: 2rem;
+            transition: all .4s;
+            border-radius: 0.5rem; 
+            max-height: 100%;
+            
+
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4)
+            }
+            
+
+            .home-cards-element-image{
+                padding-bottom: 2rem;
+               img{
+                border-radius: 0.3rem;
+               }
+            }
+
+            .home-cards-element-title{
+        
+                h3{
+                    color: orange;
+                }        
+            }
+
+            .home-cards-element-description p{
+                color: black;
+                padding-top: 2rem;
+                width: 70%;
+                margin: auto;
+                font-weight: 400;
             }
         }
     }
@@ -69,11 +106,22 @@ $second-color: white;
         margin: 1rem auto;
         margin-top: 3rem;
 
-        .home-slider-text p{
-            font-size: 4rem;
-            text-align: center;
-            width: 80%;
-            
+        .home-slider-text {
+            margin-top: 6rem;
+            width: 80%;    
+            .home-slider-text-title {
+                padding-bottom: 1rem;
+                h3{
+                    font-size: 2rem;
+                    color: #00AEE6;
+                }
+            }
+            .home-slider-text-description{
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
