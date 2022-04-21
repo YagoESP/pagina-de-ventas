@@ -1,0 +1,106 @@
+$primary-color: rgb(89, 171, 227);
+
+.contact{
+    padding-bottom: 5rem;
+    background: $primary-color;
+    
+    .contact-title{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        
+        h2{
+            color: black;
+        }
+    }
+
+    .contact-form{
+        width: 85%;
+        margin: auto;
+        background: #2a70d5;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        border-radius:8px;
+        
+        box-shadow:10px 10px 0px rgba(0,0,0,.1);
+        box-sizing:border-box;
+        font-family:'Montserrat',sans-serif;
+        
+        
+        .contact-form-description{
+            padding-bottom: 2rem;
+            padding-left: 5rem;
+            padding-top: 1rem;
+            
+            
+            h3{
+                
+                font-size: 1.5rem;
+                svg{
+                    width: 8%;
+                    
+                }
+                
+            }
+        }
+
+        .contact-form-information{
+            font-weight: 600;
+            font-size: 1.1rem;
+            .contact-form-information-personal{
+                padding-bottom: 1.5rem;
+
+                p{
+                    
+                   input{
+                       
+                        margin-top: 0.5rem;
+                        padding: 0.3rem;
+                        transition: all .4s;
+                        border-radius: 0.5rem; 
+                        box-shadow:10px 10px 0px rgba(0,0,0,.1);
+                        border: white 3px solid;
+                        
+                   } 
+                }
+            }
+
+            .contact-form-information-message{
+                p{
+                    
+                }
+                textarea{
+                    width: 90%;
+                    margin:auto;
+                    padding-bottom: 8rem;
+                    border-radius: 0.5rem; 
+                    box-shadow:10px 10px 0px rgba(0,0,0,.1);
+                    border: white 3px solid;
+                    margin-top: 0.5rem;
+                }
+            }
+
+            .contact-form-information-button{
+                width: 45%;
+                margin-left: auto;
+                
+                button{
+                    margin-top: 3rem;
+                    padding: 1rem 4rem 1rem 4rem;
+                    border-radius: 0.5rem; 
+                    box-shadow:10px 10px 0px rgba(0,0,0,.1);
+                    border: white 3px solid;
+                    transition: all .4s;
+                    font-weight: 600;
+                    background: $primary-color;
+
+                    &:hover{
+                        background: #000;
+                        color: white;
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+    }
+}
