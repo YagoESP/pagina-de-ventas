@@ -157,6 +157,27 @@
     }
 }
 
+@mixin featuredButton($font-size){
+
+    button{
+        background: $primary-color;  
+        border-radius: 0.5rem;
+        border: white 3px solid;
+        box-shadow: 10px 10px 0px rgba(0,0,0,.1);
+        color: white; 
+        font-size: $font-size;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 1rem 2.5rem 1rem 2.5rem;
+        transition: all .4s;
+
+        &:hover{
+            background: #FF9A33;
+            transition: 0.2s all;
+        }
+    } 
+}
+
 @mixin rotate($class, $width, $width-sm) {
     
     .#{$class}.is-switched .is-visible {

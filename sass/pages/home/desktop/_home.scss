@@ -1,9 +1,6 @@
-$primary-color: black;
-$second-color: white;
-$thrid-color:#00AEE6;
-
 .home{
-    background: $primary-color;
+
+    background: hsl(0, 0%, 0%);
 
     .slider{
         
@@ -24,22 +21,12 @@ $thrid-color:#00AEE6;
             }
         }
     
-        .slider-button button{
-            background: #2A70D5;  
-            color: white; 
-            padding: 1rem 2.5rem 1rem 2.5rem;
+        .slider-button{
             position: absolute;
             top: 50%;
             left: 10%;
-            border: 1px solid black;
-            border-radius: 0.7rem;
-            font-size: 2rem;
-            font-weight: 600;
 
-            &:hover{
-                background: #FF9A33;
-                transition: 0.2s all;
-            }
+            @include featuredButton(2rem);
         }
         
     }

@@ -376,20 +376,20 @@ video {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, a, p {
+h1, h2, h3, h4, h5, h6, a, p, label {
   color: hsl(0deg, 0%, 100%);
 }
 
 h1, h2, h3, h4 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h5, h6 {
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a, td, th, p, button, span, label, select, input, textarea, li {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -558,8 +558,55 @@ footer .footer-element .footer-element-socialmedia svg {
   width: 100%;
 }
 
+form .form-element {
+  margin-bottom: 1.5rem;
+}
+form .form-element .form-element-label {
+  margin-bottom: 0.5rem;
+}
+form .form-element .form-element-label label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+form .form-element .form-element-input input {
+  padding: 0.3rem;
+  transition: all 0.4s;
+  border-radius: 0.5rem;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  border: white 3px solid;
+}
+form .form-element .form-element-input textarea {
+  height: 20vh;
+  width: 90%;
+  padding: 5%;
+  border-radius: 0.5rem;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  border: white 3px solid;
+}
+form .form-send-button {
+  margin-top: 3rem;
+  width: max-content;
+  margin-left: auto;
+}
+form .form-send-button button {
+  background: hsl(226deg, 63%, 45%);
+  border-radius: 0.5rem;
+  border: white 3px solid;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  transition: all 0.4s;
+}
+form .form-send-button button:hover {
+  background: #FF9A33;
+  transition: 0.2s all;
+}
+
 .home {
-  background: black;
+  background: hsl(0deg, 0%, 0%);
 }
 .home .slider .slider-image {
   position: relative;
@@ -575,17 +622,22 @@ footer .footer-element .footer-element-socialmedia svg {
   font-size: 3rem;
   font-weight: 900;
 }
-.home .slider .slider-button button {
-  background: #2A70D5;
-  color: white;
-  padding: 1rem 2.5rem 1rem 2.5rem;
+.home .slider .slider-button {
   position: absolute;
   top: 50%;
   left: 10%;
-  border: 1px solid black;
-  border-radius: 0.7rem;
+}
+.home .slider .slider-button button {
+  background: hsl(226deg, 63%, 45%);
+  border-radius: 0.5rem;
+  border: white 3px solid;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  color: white;
   font-size: 2rem;
   font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  transition: all 0.4s;
 }
 .home .slider .slider-button button:hover {
   background: #FF9A33;
@@ -782,84 +834,161 @@ footer .footer-element .footer-element-socialmedia svg {
 .contact .contact-title h2 {
   color: black;
 }
-.contact .contact-form {
+.contact .contact-options {
   width: 85%;
   margin: auto;
   background: #2a70d5;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem;
   border-radius: 8px;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
-.contact .contact-form .contact-form-description {
-  padding-bottom: 2rem;
-  padding-left: 5rem;
-  padding-top: 1rem;
+.contact .contact-options .contact-option {
+  margin-bottom: 2rem;
 }
-.contact .contact-form .contact-form-description h3 {
+.contact .contact-options .contact-option h3 {
   font-size: 1.5rem;
 }
-.contact .contact-form .contact-form-description h3 svg {
+.contact .contact-options .contact-option h3 svg {
   width: 8%;
 }
-.contact .contact-form .contact-form-information {
-  font-weight: 600;
-  font-size: 1.1rem;
+
+.product {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  overflow: hidden;
 }
-.contact .contact-form .contact-form-information .contact-form-information-personal {
-  padding-bottom: 1.5rem;
-}
-.contact .contact-form .contact-form-information .contact-form-information-personal p input {
-  margin-top: 0.5rem;
-  padding: 0.3rem;
-  transition: all 0.4s;
-  border-radius: 0.5rem;
-  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
-  border: white 3px solid;
-}
-.contact .contact-form .contact-form-information .contact-form-information-message textarea {
-  width: 90%;
+.product .product-carousel {
+  text-align: center;
+  width: 70%;
   margin: auto;
-  padding-bottom: 8rem;
-  border-radius: 0.5rem;
-  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
-  border: white 3px solid;
-  margin-top: 0.5rem;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
-.contact .contact-form .contact-form-information .contact-form-information-button {
-  width: 45%;
-  margin-left: auto;
+.product .product-carousel::-webkit-scrollbar {
+  display: none;
 }
-.contact .contact-form .contact-form-information .contact-form-information-button button {
-  margin-top: 3rem;
-  padding: 1rem 4rem 1rem 4rem;
-  border-radius: 0.5rem;
-  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
-  border: white 3px solid;
-  transition: all 0.4s;
+.product .product-carousel .carousel-image {
+  display: flex;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.5s;
+  max-width: 100%;
+}
+.product .product-carousel .carousel-image img {
+  border-radius: 0.7rem;
+}
+.product .carousel-buttons {
+  padding-top: 2rem;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.product .carousel-buttons a {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  background: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.product .carousel-buttons a:hover {
+  background: white;
+}
+.product .product-information {
+  width: 80%;
+  margin-right: auto;
+}
+.product .product-information div {
+  padding-bottom: 1rem;
+}
+.product .product-information .product-title h2 {
+  color: black;
   font-weight: 600;
-  background: rgb(89, 171, 227);
+  font-size: 3.5rem;
 }
-.contact .contact-form .contact-form-information .contact-form-information-button button:hover {
-  background: #000;
+.product .product-information .product-price h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.product .product-information .product-description p {
+  font-size: 1.5rem;
+}
+.product .product-information .product-amount .amount label {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.product .product-information .product-amount .amount input {
+  text-align: center;
+  width: 5%;
+  padding: 0.2rem 0.3rem;
+  border-radius: 8px;
+}
+.product .product-information .product-button button {
+  background: rgb(89, 171, 227);
+  border-radius: 0.5rem;
+  border: white 3px solid;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
   color: white;
-  transform: translateY(-5px);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  transition: all 0.4s;
+}
+.product .product-information .product-button button:hover {
+  background: #FF9A33;
+  transition: 0.2s all;
 }
 
-.product .product-carousel .product-carousel-principal {
-  display: block;
-  text-align: left;
-  position: relative;
-  margin-bottom: 22px;
+.cart .cart-title {
+  text-align: center;
 }
-.product .product-carousel-secondary .product-carousel-secondary-navegation {
-  transition: all 300ms ease-out;
-  box-sizing: border-box;
+.cart .cart-title h2 {
+  font-size: 700;
+  font-size: 3rem;
 }
-.product .product-carousel-secondary .product-carousel-secondary-navegation .product-carousel-secondary-navegation-image {
-  box-sizing: border-box;
+.cart .cart-shop {
+  width: 70%;
+  margin: auto;
+  border: 1px solid black;
+}
+.cart .cart-shop .cart-shop-titles {
+  border-bottom: 1px black solid;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cart-shop .cart-shop-description {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.cart .cart-shop .cart-shop-description td {
+  padding: 4rem;
+  border: 1px solid black;
+  font-weight: 500;
+  color: white;
+}
+.cart .cart-shop .cart-shop-description td img {
+  width: 25%;
+}
+.cart .cart-shop .cart-shop-description td input {
+  text-align: center;
+  width: 10%;
+  padding: 0.2rem 0.3rem;
+  margin-left: 5rem;
 }
 
 /*# sourceMappingURL=app.css.map */

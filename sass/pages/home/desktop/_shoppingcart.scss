@@ -1,0 +1,49 @@
+.cart{
+    .cart-title{
+        text-align: center;
+
+        h2{
+            font-size: 700;
+            font-size: 3rem;
+        }
+    }
+
+    .cart-shop{
+        width: 70%;
+        margin: auto;
+        border: 1px solid black;
+
+        .cart-shop-titles{
+            border-bottom: 1px black solid;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .cart-shop-description{
+            
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            border: 1px solid black;
+            td{
+                padding: 4rem;
+                border: 1px solid black;
+                font-weight: 500;
+                color: white;
+                img{
+                    width: 25%;
+                }
+
+                input{
+                    
+                    text-align: center;
+                    width: 10%;
+                    padding: 0.2rem 0.3rem ;
+                    margin-left: 5rem;
+                }
+            }
+        }
+    }
+}
