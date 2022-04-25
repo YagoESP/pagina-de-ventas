@@ -178,6 +178,7 @@
     } 
 }
 
+
 @mixin rotate($class, $width, $width-sm) {
     
     .#{$class}.is-switched .is-visible {

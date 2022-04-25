@@ -10,6 +10,7 @@
         
 
         .shop-categories-title{
+
             margin-bottom: 1rem;
 
             h2{
@@ -22,20 +23,22 @@
         .shop-categories-element{
             margin-bottom: 1.5rem;
             font-size: 1.7rem;
-            
         }
     }
 
 
     .shop-articles{
+
         width: 85%;
         margin: auto;
         padding: 4rem;
         border-left: 0.3rem white solid;
         
         .shop-articles-information{
+
             margin-bottom: 2.5rem;
-            .shop-articles-information-comentary{
+
+            .shop-articles-information-counter{
                 text-align: start;
                 
                 p{
@@ -51,7 +54,7 @@
                 text-align: left;
                 
 
-                .perros{
+                select{
                     
                     cursor: pointer;
                     background: #2A70D5;
@@ -80,78 +83,74 @@
             }
         }
 
-        .shop-articles-sections{
             
-            .shop-articles-sections-cards{
-                    
-            
-                 .shop-articles-sections-cards-content{
-                    text-align: center;
-                    margin-top: 2rem;
-                    transition: all .4s;
-                    border-radius: 0.5rem; 
-                    box-shadow:15px 15px 0px rgba(0,0,0,.1);
-                    border: white 3px solid;
-                    padding: 0.1rem;
-                    background: white;
-                  
-                    
+        .shop-articles-sections-cards{
+                
+            .shop-articles-sections-cards-content{
+                text-align: center;
+                margin-top: 2rem;
+                transition: all .4s;
+                border-radius: 0.5rem; 
+                box-shadow:15px 15px 0px rgba(0,0,0,.1);
+                border: white 3px solid;
+                padding: 0.1rem;
+                background: white;
+                
+                &:hover{
+                    transform: translateY(-25px);
+                    box-shadow: 0 6px 20px rgba(0,0,0,.1);
+                }
 
-                    &:hover{
-                        transform: translateY(-25px);
-                        box-shadow: 0 6px 20px rgba(0,0,0,.1);
-                    }
-                    .shop-articles-sections-cards-content-image{
-                        
-                        img{
-                           height: 16rem;
-                           border-radius: 0.5rem; 
-                        }
-                    }
-
-                    .shop-articles-sections-cards-content-price{
-                     
-                       
-                        position: relative;
-                        
-                        
-                        span{
-                            position: absolute;
-                            
-                           
-                           
-                            font-weight: 700;
-                          
-                            transform: translate(-50%, 0);
-                       }
-                    }
-                    .shop-articles-sections-cards-content-title{
-                        background: white;
-                        padding: 1rem;
+                .shop-articles-sections-cards-content-image{
+                    
+                    img{
+                        height: 16rem;
                         border-radius: 0.5rem; 
-                        h3{
-                            color:black;
-                            
-                        }
                     }
-                    .shop-articles-sections-cards-content-button{
-                      margin-bottom: 1.5rem;
-                        button{
-                            position:relative;
-                            width:80%;
-                            padding:1rem;
-                            border-radius:6px;
-                            border:0;
-                            background:#f26964;
-                            cursor: pointer;
-                            font-size:1.2em;
-                            color:#fff;
-                            text-shadow:1px 1px 0px rgba(0,0,0,.1);
-                            box-shadow:0px 3px 0px #c1524e;
-                        }
+                }
+
+                .shop-articles-sections-cards-content-price{
+                             
+                    position: relative;
+                        
+                    span{
+                        position: absolute;                   
+                        font-weight: 700;                   
+                        transform: translate(-50%, 0);
+                    }
+                }
+                .shop-articles-sections-cards-content-title{
+
+                    background: white;
+                    padding: 1rem;
+                    border-radius: 0.5rem; 
+
+                    h3{
+                        color:black;
+                        
+                    }
+                }
+
+                .shop-articles-sections-cards-content-button{
+                    
+                    margin-bottom: 1.5rem;
+
+                    button{
+                        position:relative;
+                        width:80%;
+                        padding:1rem;
+                        border-radius:6px;
+                        border:0;
+                        background:#f26964;
+                        cursor: pointer;
+                        font-size:1.2em;
+                        color:#fff;
+                        text-shadow:1px 1px 0px rgba(0,0,0,.1);
+                        box-shadow:0px 3px 0px #c1524e;
                     }
                 }
             }
         }
+        
     }
 }

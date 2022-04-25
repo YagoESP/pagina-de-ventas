@@ -1,0 +1,13 @@
+@include respond-to(xs){
+    .header-main{
+        width: 20%;
+    }
+
+    .home.cards{
+        width: 30%;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
