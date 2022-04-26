@@ -427,6 +427,14 @@ body {
   background: #FF6347;
 }
 
+.desktop-only {
+  display: revert !important;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
 header {
   background: black;
 }

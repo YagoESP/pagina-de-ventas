@@ -1,13 +1,82 @@
-@include respond-to(xs){
-    .header-main{
-        width: 20%;
+.home{
+    
+    .slider{
+        text-align: center;
+        .slider-title{
+            margin-top: 1.5rem;
+            h2{
+               
+            }
+        }
+
+        .slider-button{
+            margin-top: 1rem;
+            @include featuredButton(1rem);
+        }
+        
     }
 
-    .home.cards{
-        width: 30%;
+    .home-cards{
+        text-align: center;
+        margin-top: 2rem;
+
+        .home-cards-title{
+            h2{
+                color: #80D99D;
+            }
+        }
+
+        .home-cards-element{
+            
+            width: 80%;
+            margin: 2rem auto 2rem auto;
+
+            .home-cards-element-image{
+                img{
+                    border-radius: 0.5rem;
+                }
+            }
+
+            .home-cards-element-title{
+                margin-top: 0.5rem;
+                h3{
+                    color: orange;
+                }
+            }
+
+            .home-cards-element-description{
+                margin-top: 0.5rem;
+                p{
+                    
+                }
+            }
+        }
     }
 
-    footer{
-        width: 100%;
+    .home-slider{
+        margin-top: 4rem;
+        text-align: center;
+        .home-slider-image{
+            width: 130%;
+            img{
+               
+            }
+        }
+
+        .home-slider-text{
+            margin-right: 2rem;
+            .home-slider-text-title{
+                text-align: end;
+                h3{
+                    font-size: 1.5rem;
+                    color: #FF6347;
+                }
+            }
+            
+            .home-slider-text-description{
+                display: none;
+            }
+        } 
     }
 }
+

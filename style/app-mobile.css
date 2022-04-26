@@ -423,6 +423,10 @@ a:hover, a:focus {
   outline-offset: 0;
 }
 
+body {
+  background: black;
+}
+
 .desktop-only {
   display: none !important;
 }
@@ -434,6 +438,19 @@ a:hover, a:focus {
 header {
   background: black;
 }
+header .header-mobile-menu {
+  background-color: hsl(0deg, 0%, 0%);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: -100vh;
+  transition: top 0.5s;
+  width: 100%;
+}
+header .header-mobile-menu.active {
+  top: 0;
+  transition: top 0.5s;
+}
 header .header-main {
   background: black;
   padding: 1%;
@@ -442,10 +459,50 @@ header .header-main {
 }
 header .header-main .header-main-logo {
   display: flex;
-  justify-content: start;
-  width: 70%;
-  margin-left: auto;
+  justify-content: space-between;
+  width: 80%;
   margin-top: 1.3rem;
+}
+header .header-main .header-main-logo .header-hamburguer {
+  position: relative;
+}
+header .header-main .header-main-logo .header-hamburguer .hamburger {
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .header-main .header-main-logo .header-hamburguer .hamburger :hover {
+  cursor: pointer;
+}
+header .header-main .header-main-logo .header-hamburguer .hamburger span {
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .header-main .header-main-logo .header-hamburguer .hamburger span :nth-child(3) {
+  opacity: 0;
+}
+header .header-main .header-main-logo .header-hamburguer .hamburger span :nth-child(1) {
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+header .header-main .header-main-logo .header-hamburguer .hamburger span :nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
 }
 header .header-main .header-main-logo .header-main-logo-title h1 svg {
   width: 2.3rem;
@@ -477,6 +534,23 @@ header .header-main .header-main-menu .header-main-menu-element-active button {
 }
 header .header-main .header-main-menu .header-main-menu-element-active button:hover {
   background: red;
+}
+
+footer {
+  background-image: url(/images/hocico.jpg);
+  background-size: cover;
+  background-position: center;
+}
+footer .footer-element {
+  text-align: center;
+  color: white;
+}
+footer .footer-element .footer-element-copyright h5 {
+  font-size: 2.5rem;
+}
+footer .footer-element .footer-element-socialmedia svg {
+  width: 2.7rem;
+  padding-left: 1.5rem;
 }
 
 .mobile-five-columns {
@@ -523,18 +597,73 @@ header .header-main .header-main-menu .header-main-menu-element-active button:ho
   width: 100%;
 }
 
-@media (max-width: 370px) {
-  .header-main {
-    width: 20%;
-  }
-
-  .home.cards {
-    width: 30%;
-  }
-
-  footer {
-    width: 100%;
-  }
+.home .slider {
+  text-align: center;
+}
+.home .slider .slider-title {
+  margin-top: 1.5rem;
+}
+.home .slider .slider-button {
+  margin-top: 1rem;
+}
+.home .slider .slider-button button {
+  background: hsl(226deg, 63%, 45%);
+  border-radius: 0.5rem;
+  border: white 3px solid;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  transition: all 0.4s;
+}
+.home .slider .slider-button button:hover {
+  background: #FF9A33;
+  transition: 0.2s all;
+}
+.home .home-cards {
+  text-align: center;
+  margin-top: 2rem;
+}
+.home .home-cards .home-cards-title h2 {
+  color: #80D99D;
+}
+.home .home-cards .home-cards-element {
+  width: 80%;
+  margin: 2rem auto 2rem auto;
+}
+.home .home-cards .home-cards-element .home-cards-element-image img {
+  border-radius: 0.5rem;
+}
+.home .home-cards .home-cards-element .home-cards-element-title {
+  margin-top: 0.5rem;
+}
+.home .home-cards .home-cards-element .home-cards-element-title h3 {
+  color: orange;
+}
+.home .home-cards .home-cards-element .home-cards-element-description {
+  margin-top: 0.5rem;
+}
+.home .home-slider {
+  margin-top: 4rem;
+  text-align: center;
+}
+.home .home-slider .home-slider-image {
+  width: 130%;
+}
+.home .home-slider .home-slider-text {
+  margin-right: 2rem;
+}
+.home .home-slider .home-slider-text .home-slider-text-title {
+  text-align: end;
+}
+.home .home-slider .home-slider-text .home-slider-text-title h3 {
+  font-size: 1.5rem;
+  color: #FF6347;
+}
+.home .home-slider .home-slider-text .home-slider-text-description {
+  display: none;
 }
 
 /*# sourceMappingURL=app-mobile.css.map */
