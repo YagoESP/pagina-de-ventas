@@ -557,6 +557,18 @@ footer .footer-element .footer-element-socialmedia svg {
   width: 75%;
 }
 
+.desktop-two-columns-aside-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.desktop-two-columns-aside-panel > .column-aside {
+  width: 30%;
+}
+.desktop-two-columns-aside-panel > .column-main {
+  width: 65%;
+}
+
 .desktop-one-column {
   width: 100%;
 }
@@ -1201,6 +1213,48 @@ form .form-send-button button:hover {
 .check .pay .pay-button button:hover {
   background: #FF9A33;
   transition: 0.2s all;
+}
+
+.admin {
+  width: 90%;
+  margin: auto;
+}
+.admin .title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.admin .registers {
+  background: blueviolet;
+}
+.admin .admin-panel {
+  background: white;
+}
+.admin .admin-panel .gestion {
+  display: flex;
+  background: grey;
+  width: 100%;
+}
+.admin .admin-panel .gestion .contents {
+  width: 45%;
+  margin-right: auto;
+}
+.admin .admin-panel .gestion .options {
+  width: 35%;
+  margin: auto;
+}
+.admin .admin-panel .language {
+  width: 80%;
+  margin: auto;
+  background: gray;
+}
+.admin .admin-panel .language button {
+  background: darkcyan;
+  padding: 1rem;
+  color: white;
+}
+.admin .admin-panel .description {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=app.css.map */

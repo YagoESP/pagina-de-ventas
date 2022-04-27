@@ -17,7 +17,7 @@
     
     <body>
         <header>
-            <div class="header-mobile-menu">
+            <div class="header-mobile-menu ">
             
             </div>
             <div class="header-main">
@@ -26,15 +26,20 @@
                         
                         <div class="header-main-logo ">
                             <div class="header-hamburguer mobile-only">
-                                <div class="hamburger" id="hamburger-style">
+                                <div class="hamburger " id="hamburger">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
-
-                                <div class="hamburguer-overlay"></div>
+                                <ul id="hamburger-menu">
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>home</li>
+                                  </ul>
+                                
                             </div>
-                            <div class="header-main-logo-title">
+                            <div class="header-main-logo-title " id="header-menu">
                                 
                                 <h1>P U
                                     <svg viewBox="0 0 24 24">
@@ -85,6 +90,7 @@
                 <div class="slider ">
                     <div class="slider-image ">
                         <img src="/images/perroslider.jpg" class="desktop-only" alt="">
+                        <img src="/images/perromobil.jpg" class="mobile-only" alt="">
                     </div>
                     <div class="slider-title">
                         <h2>CONOCE A TU AMIGO CANINO</h2>
@@ -250,6 +256,8 @@
         </footer>
      
         <script  src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+        <script defer src="js/app-mobile.js"></script>
         <script>
             WebFont.load({
                 google: {

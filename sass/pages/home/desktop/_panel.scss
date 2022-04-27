@@ -1,0 +1,54 @@
+.admin{
+    width: 90%;
+    margin: auto;
+    .title{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .registers{
+        background: blueviolet;
+    }
+
+    .admin-panel{
+        background: white;
+
+        .gestion{
+            display: flex;
+            background: grey;
+            width: 100%;
+            
+            .contents{
+                width: 45%;
+                margin-right: auto;
+                
+            }
+    
+            .options{
+                width: 35%;
+                margin: auto;
+                
+            }
+        }
+        .category{
+           
+        }
+
+        .language{
+            width: 80%;
+            margin: auto;
+            background: gray;
+
+            button{
+                background: darkcyan ;
+                padding: 1rem;
+                color: white;
+            }
+        }
+
+        .description{
+            display: flex;
+        justify-content: space-between;
+        }
+    }
+}
