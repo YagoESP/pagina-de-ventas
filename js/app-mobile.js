@@ -4,12 +4,15 @@ let menu = document.getElementById("hamburger-menu");
 
 let title = document.getElementById("header-menu")
 
-hamburger.addEventListener("click",function() {
+if(hamburger){
+    hamburger.addEventListener("click",function() {
 
-    hamburger.classList.toggle("active");
-    menu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+        menu.classList.toggle("active");
+    
+        title.classList.toggle("active")
+    });
+}
 
-    title.classList.toggle("active")
-});
 
 

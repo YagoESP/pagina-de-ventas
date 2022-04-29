@@ -7,48 +7,186 @@
     }
 
     .registers{
-        background: blueviolet;
+        padding: 0.5rem;
+        background: white;
+        border-top: hsl(0, 4%, 85%) 5px solid;
+        border-bottom: hsl(0, 4%, 85%) 5px solid;
+        .registers-dates{
+           
+            label{
+                font-size: 0.8rem;
+                color: black;
+            }
+        }
+
+        .registers-icons{
+            text-align: end;
+            span{
+                svg{
+                    width: 25%;
+                   
+                }
+            }
+        }
     }
 
     .admin-panel{
         background: white;
 
-        .gestion{
-            display: flex;
-            background: grey;
-            width: 100%;
+        #color-panel{
+            background: hsl(0, 4%, 85%);
             
+        }
+
+        .gestion{ 
             .contents{
-                width: 45%;
-                margin-right: auto;
+                button{
+                    padding: 0.7rem;
+                }
+            } 
+        }
+
+        .options{
+            
+            .element{
+                width: 70%;
+                margin-left: auto;
+                span{
+                    padding-left: 1rem;
+                    
+                    svg{
+                        width: 30%;
+                    }
+                }
+
                 
-            }
-    
-            .options{
-                width: 35%;
-                margin: auto;
+                    
+                    label{
+                        cursor: pointer;
+                        width: 100px;
+                        height: 40px;
+                        background: grey;
+                        
+                        border-radius: 100px;
+                        position: absolute;
+                        
+                    }
+        
+                    label:after{
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        width: 30px;
+                        height: 30px;
+                        background: #fff;
+                        border-radius: 90px;
+                        transition: 0.3s;
+                    }
+        
+                    input[type=checkbox]{
+                        height: 0;
+                        width: 0;
+                        visibility: hidden;
+                    }
+        
+                    input:checked + label {
+                        background: darkcyan;
+                    }
+                        
+                    input:checked + label:after {
+                        left: calc(100% - 5px);
+                        transform: translateX(-100%);
+                    }
+                        
+                    label:active:after {
+                        width: 130px;
+                    }
                 
             }
         }
+
+        
+
+
         .category{
-           
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            
+
+            .catalogue{
+                
+                
+                
+                label{
+                    color: black;
+                }
+
+                select{
+                    border: none;
+                    border-bottom: 2px hsl(0, 4%, 85%) solid;
+                    padding: 0.1rem 4rem 0.1rem 4rem;
+                }
+            }
+
+           .name{
+               
+                label{
+                    color: black;
+                    
+                }
+
+                input{
+                    border: none;
+                    border-bottom: 2px hsl(0, 4%, 85%) solid;
+                    
+                }
+           }
         }
 
         .language{
             width: 80%;
             margin: auto;
-            background: gray;
+            background: hsl(0, 4%, 85%);
 
             button{
                 background: darkcyan ;
-                padding: 1rem;
+                padding: 0.7rem;
                 color: white;
             }
         }
 
         .description{
             display: flex;
-        justify-content: space-between;
+            justify-content: space-between;
+            width: 75%;
+            margin: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            label{
+                color: black;
+            }
+
+            input{
+                border: none;
+                border-bottom: 20px hsl(0, 4%, 85%) solid;
+                padding-left: auto;                   
+            }
+        }
+
+        .text-editor{
+            width: 75%;
+            margin: auto;
+            tr{
+                td{
+                    button{
+
+                    }
+                }
+            }
         }
     }
 }

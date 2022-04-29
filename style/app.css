@@ -943,6 +943,27 @@ form .form-send-button button:hover {
 .product .product-information .product-description p {
   font-size: 1.5rem;
 }
+.product .product-information .tab {
+  display: flex;
+}
+.product .product-information .tab .tab-element {
+  cursor: pointer;
+  background: black;
+  color: white;
+  margin-left: 1rem;
+  padding: 1rem 1rem;
+}
+.product .product-information .tab .active {
+  background: white;
+  color: black;
+}
+.product .product-information .panel {
+  display: none;
+}
+.product .product-information .panel .first {
+  background: blue;
+  display: block;
+}
 .product .product-information .product-amount h4 {
   font-weight: 600;
   font-size: 1.3rem;
@@ -952,6 +973,7 @@ form .form-send-button button:hover {
   padding-top: 1rem;
 }
 .product .product-information .product-amount .amount .less button {
+  cursor: pointer;
   display: block;
   width: 1.7rem;
   height: 1.7rem;
@@ -971,9 +993,20 @@ form .form-send-button button:hover {
   color: white;
   font-weight: 600;
   font-size: 1.6rem;
-  padding: 0rem 1rem 0rem 1rem;
+  padding: 0rem 1rem 0.5rem 1rem;
+  width: 10%;
+}
+.product .product-information .product-amount .amount .number #show {
+  text-align: center;
+  width: 2rem;
+  margin: auto;
+}
+.product .product-information .product-amount .amount .more {
+  width: 100%;
+  margin: auto;
 }
 .product .product-information .product-amount .amount .more button {
+  cursor: pointer;
   display: block;
   width: 1.7rem;
   height: 1.7rem;
@@ -1224,37 +1257,124 @@ form .form-send-button button:hover {
   margin-bottom: 1rem;
 }
 .admin .registers {
-  background: blueviolet;
+  padding: 0.5rem;
+  background: white;
+  border-top: hsl(0deg, 4%, 85%) 5px solid;
+  border-bottom: hsl(0deg, 4%, 85%) 5px solid;
+}
+.admin .registers .registers-dates label {
+  font-size: 0.8rem;
+  color: black;
+}
+.admin .registers .registers-icons {
+  text-align: end;
+}
+.admin .registers .registers-icons span svg {
+  width: 25%;
 }
 .admin .admin-panel {
   background: white;
 }
-.admin .admin-panel .gestion {
-  display: flex;
+.admin .admin-panel #color-panel {
+  background: hsl(0deg, 4%, 85%);
+}
+.admin .admin-panel .gestion .contents button {
+  padding: 0.7rem;
+}
+.admin .admin-panel .options .element {
+  width: 70%;
+  margin-left: auto;
+}
+.admin .admin-panel .options .element span {
+  padding-left: 1rem;
+}
+.admin .admin-panel .options .element span svg {
+  width: 30%;
+}
+.admin .admin-panel .options .element label {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
   background: grey;
-  width: 100%;
+  border-radius: 100px;
+  position: absolute;
 }
-.admin .admin-panel .gestion .contents {
-  width: 45%;
-  margin-right: auto;
+.admin .admin-panel .options .element label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
 }
-.admin .admin-panel .gestion .options {
-  width: 35%;
-  margin: auto;
+.admin .admin-panel .options .element input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.admin .admin-panel .options .element input:checked + label {
+  background: darkcyan;
+}
+.admin .admin-panel .options .element input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+.admin .admin-panel .options .element label:active:after {
+  width: 130px;
+}
+.admin .admin-panel .category {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.admin .admin-panel .category .catalogue label {
+  color: black;
+}
+.admin .admin-panel .category .catalogue select {
+  border: none;
+  border-bottom: 2px hsl(0deg, 4%, 85%) solid;
+  padding: 0.1rem 4rem 0.1rem 4rem;
+}
+.admin .admin-panel .category .name label {
+  color: black;
+}
+.admin .admin-panel .category .name input {
+  border: none;
+  border-bottom: 2px hsl(0deg, 4%, 85%) solid;
 }
 .admin .admin-panel .language {
   width: 80%;
   margin: auto;
-  background: gray;
+  background: hsl(0deg, 4%, 85%);
 }
 .admin .admin-panel .language button {
   background: darkcyan;
-  padding: 1rem;
+  padding: 0.7rem;
   color: white;
 }
 .admin .admin-panel .description {
   display: flex;
   justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.admin .admin-panel .description label {
+  color: black;
+}
+.admin .admin-panel .description input {
+  border: none;
+  border-bottom: 20px hsl(0deg, 4%, 85%) solid;
+  padding-left: auto;
+}
+.admin .admin-panel .text-editor {
+  width: 75%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -89,6 +89,47 @@
             }
         }
 
+        .tab{
+            display: flex;
+            
+            .tab-element{
+                cursor: pointer;
+                background: black;
+                color: white;
+                margin-left: 1rem;
+                padding: 1rem 1rem;
+
+                
+            }
+            .active{
+                background: white;
+                color: black;
+            }
+            
+        }
+
+        .panel{
+
+            .first{
+                background: blue;
+                display:block;
+            }
+
+            display: none;
+            .panel-element{
+                
+            }
+
+            .show{
+                
+               
+            }
+
+
+        }
+
+        
+
         .product-amount{
             
             h4{
@@ -103,6 +144,7 @@
                 
                 .less{
                     button{
+                        cursor: pointer;
                         display: block;
                         width: 1.7rem;
                         height: 1.7rem;
@@ -125,11 +167,23 @@
                     color: white;
                     font-weight: 600;
                     font-size: 1.6rem;
-                    padding: 0rem 1rem 0rem 1rem;
+                    padding: 0rem 1rem 0.5rem 1rem;
+                    width: 10%;
+                    
+
+                    #show{
+                        text-align: center;
+                        width: 2rem;
+                        margin: auto;
+                        
+                    }
                 }
                 
                 .more{
+                   width: 100%;
+                    margin: auto;
                     button{
+                        cursor: pointer;
                         display: block;
                         width: 1.7rem;
                         height: 1.7rem;
@@ -144,6 +198,7 @@
                         font-weight: 800;
                         font-size: 1rem;
                         transition: all 0.15s ease-in-out;
+
                     }
                 }
             }
