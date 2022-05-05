@@ -43,9 +43,9 @@
 
                 .amount{
                     display: flex;
-                    padding-left: 5rem;
-                    width: 10%;
-                    margin-top: 3.5rem;
+                    width:35%;
+                    margin-top: 0.5rem;
+                    margin-left: 7rem;
                     
                     
                     .less{
@@ -71,6 +71,13 @@
                         font-weight: 600;
                         font-size: 1.6rem;
                         padding: 0rem 1rem 0rem 1rem;
+                     
+                        .show{
+                            text-align: center;
+                            width: 70%;
+                            margin: auto;
+                            
+                        }
                     }
                     
                     .more{

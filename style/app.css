@@ -626,6 +626,32 @@ form .form-send-button button:hover {
   transition: 0.2s all;
 }
 
+.notification {
+  position: fixed;
+  color: black;
+  opacity: 0;
+  width: 30%;
+  transition: all 0.5s ease;
+  padding: 2.5rem;
+  top: 10vh;
+  right: 5%;
+  z-index: -1;
+}
+.notification.active {
+  opacity: 1;
+  z-index: 5000;
+}
+.notification.success {
+  opacity: 1;
+  background-color: #087a1b;
+  z-index: 5000;
+}
+.notification.error {
+  opacity: 1;
+  background-color: red;
+  z-index: 5000;
+}
+
 .home {
   background: hsl(0deg, 0%, 0%);
 }
@@ -993,12 +1019,13 @@ form .form-send-button button:hover {
   color: white;
   font-weight: 600;
   font-size: 1.6rem;
+  margin-right: auto;
   padding: 0rem 1rem 0.5rem 1rem;
   width: 10%;
 }
-.product .product-information .product-amount .amount .number #show {
+.product .product-information .product-amount .amount .number .show {
   text-align: center;
-  width: 2rem;
+  width: 100%;
   margin: auto;
 }
 .product .product-information .product-amount .amount .more {
@@ -1022,7 +1049,10 @@ form .form-send-button button:hover {
   font-size: 1rem;
   transition: all 0.15s ease-in-out;
 }
-.product .product-information .add-to-cart-button button {
+.product .product-information .buy {
+  display: flex;
+}
+.product .product-information .buy .add-to-cart-button button {
   background: rgb(89, 171, 227);
   border-radius: 0.5rem;
   border: white 3px solid;
@@ -1034,7 +1064,7 @@ form .form-send-button button:hover {
   padding: 1rem 2.5rem 1rem 2.5rem;
   transition: all 0.4s;
 }
-.product .product-information .add-to-cart-button button:hover {
+.product .product-information .buy .add-to-cart-button button:hover {
   background: #FF9A33;
   transition: 0.2s all;
 }
@@ -1072,9 +1102,9 @@ form .form-send-button button:hover {
 }
 .cart .resume table tr .amount {
   display: flex;
-  padding-left: 5rem;
-  width: 10%;
-  margin-top: 3.5rem;
+  width: 35%;
+  margin-top: 0.5rem;
+  margin-left: 7rem;
 }
 .cart .resume table tr .amount .less button {
   border: 1px solid #c4402f;
@@ -1094,6 +1124,11 @@ form .form-send-button button:hover {
   font-weight: 600;
   font-size: 1.6rem;
   padding: 0rem 1rem 0rem 1rem;
+}
+.cart .resume table tr .amount .number .show {
+  text-align: center;
+  width: 70%;
+  margin: auto;
 }
 .cart .resume table tr .amount .more button {
   border: 1px solid #c4402f;
@@ -1272,6 +1307,24 @@ form .form-send-button button:hover {
 .admin .registers .registers-icons span svg {
   width: 25%;
 }
+.admin .register-data {
+  display: flex;
+  position: absolute;
+  top: 90vh;
+}
+.admin .register-data p {
+  padding-left: 1rem;
+  color: white;
+}
+.admin .register-navegator {
+  display: flex;
+  position: absolute;
+  top: 80vh;
+}
+.admin .register-navegator p {
+  padding-left: 1rem;
+  color: white;
+}
 .admin .admin-panel {
   background: white;
 }
@@ -1279,51 +1332,25 @@ form .form-send-button button:hover {
   background: hsl(0deg, 4%, 85%);
 }
 .admin .admin-panel .gestion .contents button {
-  padding: 0.7rem;
+  border-style: none;
+  padding: 1rem;
+  cursor: pointer;
+  background: hsl(0deg, 4%, 85%);
+}
+.admin .admin-panel .gestion .contents :first-child {
+  background: darkcyan;
+  color: white;
 }
 .admin .admin-panel .options .element {
-  width: 70%;
+  width: 50%;
   margin-left: auto;
 }
 .admin .admin-panel .options .element span {
   padding-left: 1rem;
 }
 .admin .admin-panel .options .element span svg {
-  width: 30%;
-}
-.admin .admin-panel .options .element label {
   cursor: pointer;
-  width: 100px;
-  height: 40px;
-  background: grey;
-  border-radius: 100px;
-  position: absolute;
-}
-.admin .admin-panel .options .element label:after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  border-radius: 90px;
-  transition: 0.3s;
-}
-.admin .admin-panel .options .element input[type=checkbox] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-.admin .admin-panel .options .element input:checked + label {
-  background: darkcyan;
-}
-.admin .admin-panel .options .element input:checked + label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-.admin .admin-panel .options .element label:active:after {
-  width: 130px;
+  width: 30%;
 }
 .admin .admin-panel .category {
   display: flex;
@@ -1333,6 +1360,7 @@ form .form-send-button button:hover {
 }
 .admin .admin-panel .category .catalogue label {
   color: black;
+  font-weight: 600;
 }
 .admin .admin-panel .category .catalogue select {
   border: none;
@@ -1341,6 +1369,7 @@ form .form-send-button button:hover {
 }
 .admin .admin-panel .category .name label {
   color: black;
+  font-weight: 600;
 }
 .admin .admin-panel .category .name input {
   border: none;
@@ -1352,9 +1381,11 @@ form .form-send-button button:hover {
   background: hsl(0deg, 4%, 85%);
 }
 .admin .admin-panel .language button {
+  border: none;
   background: darkcyan;
   padding: 0.7rem;
   color: white;
+  cursor: pointer;
 }
 .admin .admin-panel .description {
   display: flex;
@@ -1366,15 +1397,81 @@ form .form-send-button button:hover {
 }
 .admin .admin-panel .description label {
   color: black;
+  font-weight: 600;
 }
 .admin .admin-panel .description input {
-  border: none;
-  border-bottom: 20px hsl(0deg, 4%, 85%) solid;
-  padding-left: auto;
+  border-style: none;
+  border-bottom: 2px hsl(0deg, 4%, 85%) solid;
+  width: max-content;
 }
 .admin .admin-panel .text-editor {
   width: 75%;
   margin: auto;
+  padding-bottom: 2rem;
+}
+.admin .admin-panel .text-editor .title {
+  text-align: start;
+}
+.admin .admin-panel .text-editor .title h3 {
+  color: black;
+}
+.admin .admin-panel .text-editor tr {
+  border: 1px gray solid;
+}
+.admin .admin-panel .text-editor tr td {
+  background: #FAFAFA;
+}
+.admin .admin-panel .text-editor tr td button {
+  background: white;
+  border-style: none;
+  cursor: pointer;
+  margin-left: 0.8rem;
+  width: 6.5%;
+}
+.admin .admin-panel .text-editor tr td button svg {
+  width: 100%;
+}
+.admin .admin-panel .text-editor tr td :first-child {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.admin .admin-panel .text-editor tr td :nth-child(2) {
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.admin .admin-panel .text-editor .textbox td textarea {
+  width: 99%;
+  border-style: none;
+  padding-bottom: 5rem;
+}
+.admin .notification {
+  color: white;
+  opacity: 0;
+  transition: all 0.5s ease;
+  width: 30%;
+  margin-left: auto;
+  display: flex;
+  padding: 2.5rem;
+}
+.admin .notification.active {
+  display: absolute;
+  color: black;
+  background: orange;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.admin .notification .despatch {
+  margin-left: 4rem;
+}
+.admin .notification .despatch p {
+  font-size: 1.4rem;
+}
+.admin .notification .close {
+  background: black;
+  color: white;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

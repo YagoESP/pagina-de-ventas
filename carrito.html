@@ -87,14 +87,14 @@
                             <td>
                                 <div class="amount">
                                     <div class="less">
-                                        <button>-</button>
+                                        <button class="subtract">-</button>
                                     </div>
                                     <div class="number">
-                                        <h3>1</h3>
+                                        <input type="number" class="show" value="1" disabled>
                                     </div>
                                     <div class="more">
-                                        <button>+</button>
-                                    </div>
+                                        <button class="add">+</button>
+                                    </div>  
                                 </div>
                             </td>
                         </tr>
@@ -102,15 +102,17 @@
                             <td><img src="images/alaskan-malamute-product.jpg" alt=""></td>
                             <td>ALASKAN MALAMUTE</td>
                             <td>1200</td>
-                            <td class="amount">
-                                <div class="less">
-                                    <button>-</button>
-                                </div>
-                                <div class="number">
-                                    <h3>1</h3>
-                                </div>
-                                <div class="more">
-                                    <button>+</button>
+                            <td>
+                                <div class="amount">
+                                    <div class="less">
+                                        <button class="subtract">-</button>
+                                    </div>
+                                    <div class="number">
+                                        <input type="number" class="show" value="1" disabled>
+                                    </div>
+                                    <div class="more">
+                                        <button class="add">+</button>
+                                    </div>  
                                 </div>
                             </td>
                         </tr>
@@ -211,6 +213,7 @@
         </footer>
      
         <script  src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script type="module" src="js/app.js"></script>
         <script>
             WebFont.load({
                 google: {

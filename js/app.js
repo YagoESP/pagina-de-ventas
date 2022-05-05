@@ -1,45 +1,13 @@
-let add = document.getElementById("add");
-let subtract = document.getElementById("subtract");
-let show = document.getElementById("show");
+import {renderTabs} from './desktop/tabs.js';
+import {renderPlusMinusButton} from './desktop/plus-minus-button.js';
+import {renderForm} from './desktop/form.js';
+import {renderProduct} from './desktop/product.js';
+import {renderNotifications} from './desktop/notifications.js';
+import { renderCkeditor } from "./desktop/ckeditor.js";
 
-add.addEventListener("click",function(){
-    show.value = (parseInt(show.value) + 1)
-})
-
-subtract.addEventListener("click",function(){
-    
-    if(show.value > 1){
-        show.value = (parseInt(show.value) - 1)
-    }
-})
-
-
-let tabl = document.querySelectorAll(".tab-element")
-let panel = document.querySelectorAll(".panel")
-let tab = document.querySelectorAll(".tab")
-let panell = document.querySelectorAll(".panel-element")
-
-
-tabl.forEach(tab => {
-    
-    tab.addEventListener("click", () => {    
-        
-
-        tabl.forEach(tab =>{
-
-            tab.classList.remove("active");
-            
-        })
-        
-        tab.classList.add("active");
-
-        panell.forEach(panel =>{
-            if(tabl.dataset.text == panel.dataset.text) {
-                panel.classList.add("first");
-            }
-        })
-    });
-
-    
-});
-
+renderCkeditor();
+renderNotifications();
+renderProduct();
+renderTabs();
+renderPlusMinusButton();
+renderForm();

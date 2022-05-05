@@ -28,6 +28,29 @@
                 }
             }
         }
+
+        
+    }
+
+    .register-data{
+        display: flex;
+        position: absolute;
+        top: 90vh;
+        p{
+            padding-left: 1rem;
+            color: white;
+        }
+    }
+
+    .register-navegator{
+        display: flex;
+        position: absolute;
+        top: 80vh;
+
+        p{
+            padding-left: 1rem;
+            color: white;
+        }
     }
 
     .admin-panel{
@@ -40,8 +63,17 @@
 
         .gestion{ 
             .contents{
+                
                 button{
-                    padding: 0.7rem;
+                    border-style: none;
+                    padding: 1rem;
+                    cursor: pointer;
+                    background: hsl(0, 4%, 85%);
+                }
+
+                :first-child{
+                    background: darkcyan ;
+                    color: white;
                 }
             } 
         }
@@ -49,60 +81,16 @@
         .options{
             
             .element{
-                width: 70%;
+                width: 50%;
                 margin-left: auto;
                 span{
                     padding-left: 1rem;
                     
                     svg{
+                        cursor: pointer;
                         width: 30%;
                     }
-                }
-
-                
-                    
-                    label{
-                        cursor: pointer;
-                        width: 100px;
-                        height: 40px;
-                        background: grey;
-                        
-                        border-radius: 100px;
-                        position: absolute;
-                        
-                    }
-        
-                    label:after{
-                        content: '';
-                        position: absolute;
-                        top: 5px;
-                        left: 5px;
-                        width: 30px;
-                        height: 30px;
-                        background: #fff;
-                        border-radius: 90px;
-                        transition: 0.3s;
-                    }
-        
-                    input[type=checkbox]{
-                        height: 0;
-                        width: 0;
-                        visibility: hidden;
-                    }
-        
-                    input:checked + label {
-                        background: darkcyan;
-                    }
-                        
-                    input:checked + label:after {
-                        left: calc(100% - 5px);
-                        transform: translateX(-100%);
-                    }
-                        
-                    label:active:after {
-                        width: 130px;
-                    }
-                
+                }  
             }
         }
 
@@ -122,6 +110,7 @@
                 
                 label{
                     color: black;
+                    font-weight: 600;
                 }
 
                 select{
@@ -135,7 +124,7 @@
                
                 label{
                     color: black;
-                    
+                    font-weight: 600;
                 }
 
                 input{
@@ -152,9 +141,11 @@
             background: hsl(0, 4%, 85%);
 
             button{
+                border: none;
                 background: darkcyan ;
                 padding: 0.7rem;
                 color: white;
+                cursor: pointer;
             }
         }
 
@@ -168,25 +159,102 @@
 
             label{
                 color: black;
+                font-weight: 600;
             }
 
             input{
-                border: none;
-                border-bottom: 20px hsl(0, 4%, 85%) solid;
-                padding-left: auto;                   
+                border-style: none;
+                border-bottom: 2px hsl(0, 4%, 85%) solid;
+                width: max-content;                  
             }
         }
 
         .text-editor{
             width: 75%;
             margin: auto;
-            tr{
-                td{
-                    button{
+            padding-bottom: 2rem;
 
+            .title{
+                text-align: start;
+                h3{
+                    color: black;
+                }
+            }
+
+            tr{
+                border: 1px gray solid;
+                
+                
+                td{
+                    background: #FAFAFA;
+                    
+                    
+                    button{
+                        background: white;
+                        border-style: none;
+                        cursor: pointer;
+                        margin-left: 0.8rem;
+                        width: 6.5%;
+                        svg{
+                            width: 100%;
+                        }
+                    }
+                    
+                    :first-child{
+                        font-weight: 700;
+                        font-size: 1.3rem;
+                    }
+
+                    :nth-child(2){
+                        font-style: italic;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 1.4rem;
+                        font-weight: 600;
                     }
                 }
             }
+
+            .textbox{
+                td{
+                    textarea{
+                        width: 99%;
+                        border-style: none;
+                        padding-bottom: 5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .notification{
+        color: white;
+        opacity: 0;
+        transition: all 0.5s ease;
+        width: 30%;
+        margin-left: auto;
+        display: flex;
+        padding: 2.5rem;
+        &.active{
+            display: absolute;
+            color: black;
+            background: orange;
+            opacity: 1;
+            transition: all 0.5s ease;
+        }
+
+        .despatch{
+            margin-left: 4rem;
+            p{
+                font-size: 1.4rem;
+            }
+        }
+
+        .close{
+            background: black;
+            color: white;
+            cursor: pointer;
+            
+
         }
     }
 }
