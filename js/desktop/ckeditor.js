@@ -1,12 +1,19 @@
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import ClassicEditor from '/@ckeditor/ckeditor5-build-classic';
 
 export let renderCkeditor = () => {
 
-    ClassicEditor.create(document.querySelector( '#ckeditor' ))
+  let editors = document.querySelectorAll(".editor");
+
+  editors.forEach(editor,()=>{
+
+    ClassicEditor.create(editor)
+
     .then( editor => {
-		window.editor = editor;
+    window.editor = editor;
     })
     .catch( error => {
-		console.error( 'There was a problem initializing the editor.', error );
-    } );
+    console.error( 'There was a problem initializing the editor.', error );
+    });
+  })
+
 }

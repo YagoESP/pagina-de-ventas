@@ -2,14 +2,26 @@ import {renderNotifications} from './notifications.js';
 
 export let renderForm = () => {
 
-    let saveButton = document.querySelector(".save");
+    let addButton = document.querySelector(".save");
 
-    if(saveButton){
-        saveButton.addEventListener("click", () =>{
+    addButton.addEventListener("click", () =>{
+        
 
-            renderNotifications('Se guardo el formulario correctamente', 'success');
-    
-        });
-    }
-  
+        if(addButton) {
+            document.dispatchEvent(new CustomEvent('message', {
+                detail: {
+                    text: 'Enviado correctamente',
+                    type: 'success'
+                }
+            }));
+        } else{
+            document.dispatchEvent(new CustomEvent('message', {
+                detail: {
+                    text: 'Incorrecto ',
+                    type: 'error'
+                }
+            }));
+        }
+    }) 
 }
+

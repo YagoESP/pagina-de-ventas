@@ -89,7 +89,7 @@
                                 <div class="column">
                                     <div class="registers-icons">
                                         <span>
-                                            <svg viewBox="0 0 24 24">
+                                            <svg viewBox="0 0 24 24" >
                                                 <path fill="currentColor" d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
                                             </svg>
                                         </span>
@@ -110,20 +110,18 @@
                         <div class="register-data">
                             <div>
                                 <p>1 Registro</p>
-                            </div>
-                            <div>
                                 <p>Mostrando la Pagina 1 de 1</p>
                             </div>
+                            <ul>
+                                <li>Primera</li>
+                                <li>Anterior</li>
+                                <li>Siguiente</li>
+                                <li>Ultima</li>
+                            </ul>
+                            
                         </div>
 
-                        <div class="register-navigator">
-                            <div>
-                                <p>1 Registro</p>
-                            </div>
-                            <div>
-                                <p>Mostrando la Pagina 1 de 1</p>
-                            </div>
-                        </div>
+                      
 
                     </div>
                     <div class="column-main">
@@ -143,7 +141,7 @@
                                         <div class="options">
                                            <div class="element">
                                                 <span class="save">
-                                                    <svg viewBox="0 0 24 24" >
+                                                    <svg viewBox="0 0 24 24" class="save">
                                                         <path fill="currentColor" d="M15,9H5V5H15M12,19A3,3 0 0,1 9,16A3,3 0 0,1 12,13A3,3 0 0,1 15,16A3,3 0 0,1 12,19M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z" />
                                                     </svg>
                                                 </span>
@@ -191,10 +189,11 @@
                                 </div>
                             </div>
                             <div class="text-editor">
-                                <div >
-                                    <textarea name="" id="ckeditor " cols="30" rows="10"></textarea>
-                                </div>
+                                <textarea class="editor" id="ckeditor"></textarea>                                </div>
                             </div>
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -206,7 +205,7 @@
         </footer>
      
         <script  src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script type="module" src="js/app.js"></script>
+        <script type="module" src="dist/app.js"></script>
         <script>
             WebFont.load({
                 google: {

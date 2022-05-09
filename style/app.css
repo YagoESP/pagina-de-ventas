@@ -1308,13 +1308,23 @@ form .form-send-button button:hover {
   width: 25%;
 }
 .admin .register-data {
-  display: flex;
   position: absolute;
-  top: 90vh;
+  top: 80vh;
 }
-.admin .register-data p {
+.admin .register-data div {
+  display: flex;
+}
+.admin .register-data div p {
   padding-left: 1rem;
-  color: white;
+  color: black;
+}
+.admin .register-data ul {
+  display: flex;
+}
+.admin .register-data ul li {
+  padding-left: 1rem;
+  color: whitesmoke;
+  cursor: pointer;
 }
 .admin .register-navegator {
   display: flex;
@@ -1388,12 +1398,8 @@ form .form-send-button button:hover {
   cursor: pointer;
 }
 .admin .admin-panel .description {
-  display: flex;
-  justify-content: space-between;
   width: 75%;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto 1rem;
 }
 .admin .admin-panel .description label {
   color: black;
@@ -1407,71 +1413,10 @@ form .form-send-button button:hover {
 .admin .admin-panel .text-editor {
   width: 75%;
   margin: auto;
-  padding-bottom: 2rem;
-}
-.admin .admin-panel .text-editor .title {
-  text-align: start;
-}
-.admin .admin-panel .text-editor .title h3 {
-  color: black;
-}
-.admin .admin-panel .text-editor tr {
-  border: 1px gray solid;
-}
-.admin .admin-panel .text-editor tr td {
-  background: #FAFAFA;
-}
-.admin .admin-panel .text-editor tr td button {
-  background: white;
-  border-style: none;
-  cursor: pointer;
-  margin-left: 0.8rem;
-  width: 6.5%;
-}
-.admin .admin-panel .text-editor tr td button svg {
-  width: 100%;
-}
-.admin .admin-panel .text-editor tr td :first-child {
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-.admin .admin-panel .text-editor tr td :nth-child(2) {
-  font-style: italic;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-.admin .admin-panel .text-editor .textbox td textarea {
-  width: 99%;
-  border-style: none;
   padding-bottom: 5rem;
 }
-.admin .notification {
-  color: white;
-  opacity: 0;
-  transition: all 0.5s ease;
-  width: 30%;
-  margin-left: auto;
-  display: flex;
-  padding: 2.5rem;
-}
-.admin .notification.active {
-  display: absolute;
-  color: black;
-  background: orange;
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-.admin .notification .despatch {
-  margin-left: 4rem;
-}
-.admin .notification .despatch p {
-  font-size: 1.4rem;
-}
-.admin .notification .close {
-  background: black;
-  color: white;
-  cursor: pointer;
+.admin .admin-panel .text-editor textarea {
+  width: 50%;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -33,12 +33,25 @@
     }
 
     .register-data{
-        display: flex;
+        
         position: absolute;
-        top: 90vh;
-        p{
-            padding-left: 1rem;
-            color: white;
+        top: 80vh;
+
+        div{
+            display: flex;
+            p{
+                padding-left: 1rem;
+                color: black;
+            }
+        }
+        
+        ul{
+            display: flex;
+            li{
+                padding-left: 1rem;
+                color: whitesmoke;
+                cursor: pointer;
+            }
         }
     }
 
@@ -114,6 +127,7 @@
                 }
 
                 select{
+                    
                     border: none;
                     border-bottom: 2px hsl(0, 4%, 85%) solid;
                     padding: 0.1rem 4rem 0.1rem 4rem;
@@ -150,12 +164,8 @@
         }
 
         .description{
-            display: flex;
-            justify-content: space-between;
             width: 75%;
-            margin: auto;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            margin: 1rem auto 1rem ;
 
             label{
                 color: black;
@@ -163,6 +173,7 @@
             }
 
             input{
+                
                 border-style: none;
                 border-bottom: 2px hsl(0, 4%, 85%) solid;
                 width: max-content;                  
@@ -172,89 +183,12 @@
         .text-editor{
             width: 75%;
             margin: auto;
-            padding-bottom: 2rem;
+            padding-bottom: 5rem;
 
-            .title{
-                text-align: start;
-                h3{
-                    color: black;
-                }
+
+            textarea{
+                width: 50%;
             }
-
-            tr{
-                border: 1px gray solid;
-                
-                
-                td{
-                    background: #FAFAFA;
-                    
-                    
-                    button{
-                        background: white;
-                        border-style: none;
-                        cursor: pointer;
-                        margin-left: 0.8rem;
-                        width: 6.5%;
-                        svg{
-                            width: 100%;
-                        }
-                    }
-                    
-                    :first-child{
-                        font-weight: 700;
-                        font-size: 1.3rem;
-                    }
-
-                    :nth-child(2){
-                        font-style: italic;
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 1.4rem;
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            .textbox{
-                td{
-                    textarea{
-                        width: 99%;
-                        border-style: none;
-                        padding-bottom: 5rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .notification{
-        color: white;
-        opacity: 0;
-        transition: all 0.5s ease;
-        width: 30%;
-        margin-left: auto;
-        display: flex;
-        padding: 2.5rem;
-        &.active{
-            display: absolute;
-            color: black;
-            background: orange;
-            opacity: 1;
-            transition: all 0.5s ease;
-        }
-
-        .despatch{
-            margin-left: 4rem;
-            p{
-                font-size: 1.4rem;
-            }
-        }
-
-        .close{
-            background: black;
-            color: white;
-            cursor: pointer;
-            
-
         }
     }
 }
