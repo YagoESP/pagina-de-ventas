@@ -11,7 +11,7 @@
 
         <link href="style/normalize.css" rel="stylesheet">
         
-        <link rel="stylesheet" href="style/app.css">
+        <link rel="stylesheet" href="style/app-mobile.css">
         
     </head>
     
@@ -21,6 +21,20 @@
                 <div class="desktop-two-columns"> 
                     <div class="column">
                         <div class="header-main-logo">
+                            <div class="header-hamburguer mobile-only ">
+                                <div class="hamburger " id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul id="hamburger-menu mobile-only">
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>home</li>
+                                  </ul>
+                                
+                            </div>
                             <div class="header-main-logo-title">
                                 <h1>P U
                                     <svg viewBox="0 0 24 24">
@@ -49,7 +63,7 @@
                             </div>        
                         </div>
                     </div>    
-                    <div class="column">
+                    <div class="column desktop-only">
                         <div class="header-main-menu">
                             <div class="header-main-menu-element ">
                                 <button>ARTÍCULOS</button>
@@ -78,7 +92,7 @@
                 <div class="desktop-two-columns-aside-panel">
                     <div class="column-aside">
                         <div class="registers">
-                            <div class="desktop-two-columns">
+                            <div class="desktop-two-columns mobile-two-columns">
                                 <div class="column">
                                     <div class="registers-dates">
                                         <div><label for="">Nombre:<span>Paco</span></label></div>
@@ -126,7 +140,7 @@
                     </div>
                     <div class="column-main">
                         <div class="admin-panel">
-                                <div class="desktop-two-columns" id="color-panel">
+                                <div class="desktop-two-columns mobile-one-column" id="color-panel">
                                     <div class="column">
                                         <div class="gestion">
                                             <div class="contents">
@@ -163,7 +177,9 @@
                                         <label for="">Catalogo</label>
                                     </div>
                                     <div>
-                                        <select name="" id=""></select>
+                                        <select name="categoria" id="">
+                                            <option value="cosa">Seleccionar</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="name">

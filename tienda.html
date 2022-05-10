@@ -11,7 +11,7 @@
 
         <link href="style/normalize.css" rel="stylesheet">
         
-        <link rel="stylesheet" href="style/app.css">
+        <link rel="stylesheet" href="style/app-mobile.css">
         
     </head>
     
@@ -21,6 +21,20 @@
                 <div class="desktop-two-columns"> 
                     <div class="column">
                         <div class="header-main-logo">
+                            <div class="header-hamburguer mobile-only ">
+                                <div class="hamburger " id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul id="hamburger-menu mobile-only">
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>home</li>
+                                  </ul>
+                                
+                            </div>
                             <div class="header-main-logo-title">
                                 <h1>P U
                                     <svg viewBox="0 0 24 24">
@@ -49,8 +63,8 @@
                             </div>        
                         </div>
                     </div>    
-                    <div class="column">
-                        <div class="header-main-menu">
+                    <div class="column desktop-only">
+                        <div class="header-main-menu ">
                             <div class="header-main-menu-element ">
                                 <button>ARTÍCULOS</button>
                             </div>
@@ -68,8 +82,8 @@
 
         <main>
             <div class="shop">
-                <div class="desktop-two-columns-aside">
-                    <div class="column-aside">
+                <div class="desktop-two-columns-aside mobile-one-columns">
+                    <div class="column-aside column">
                         <div class="shop-categories">
                             <div class="shop-categories-title">
                                 <h2>Categorias</h2>
@@ -94,10 +108,10 @@
                         </div>
                     </div>
 
-                    <div class="column-main">
+                    <div class="column-main column">
                         <div class="shop-articles">
                             <div class="shop-articles-information">
-                                <div class="desktop-two-columns">
+                                <div class="desktop-two-columns mobile-two-column">
                                     <div class="column">
                                         <div class="shop-articles-information-counter">
                                             <p>Mostrando 20 perros de 200</p>
@@ -119,7 +133,7 @@
 
 
                             <div class="shop-articles-sections-cards">
-                                <div class="desktop-three-columns">
+                                <div class="desktop-three-columns mobile-one-column">
                                     <div class="column">
                                         <div class="shop-articles-sections-cards-content">
                                             <div class="shop-articles-sections-cards-content-image">

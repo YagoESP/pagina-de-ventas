@@ -11,7 +11,7 @@
 
         <link href="style/normalize.css" rel="stylesheet">
         
-        <link rel="stylesheet" href="style/app.css">
+        <link rel="stylesheet" href="style/app-mobile.css">
         
     </head>
     
@@ -21,6 +21,20 @@
                 <div class="desktop-two-columns"> 
                     <div class="column">
                         <div class="header-main-logo">
+                            <div class="header-hamburguer mobile-only ">
+                                <div class="hamburger " id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul id="hamburger-menu mobile-only">
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>home</li>
+                                  </ul>
+                                
+                            </div>
                             <div class="header-main-logo-title">
                                 <h1>P U
                                     <svg viewBox="0 0 24 24">
@@ -49,7 +63,7 @@
                             </div>        
                         </div>
                     </div>    
-                    <div class="column">
+                    <div class="column desktop-only">
                         <div class="header-main-menu">
                             <div class="header-main-menu-element ">
                                 <button>ARTÍCULOS</button>
@@ -71,9 +85,8 @@
                 <div class="contact-title">
                     <h2>CONTÁCTANOS</h2>
                 </div>
-
                 <div class="contact-options">
-                    <div class="desktop-two-columns">
+                    <div class="desktop-two-columns mobile-one-column">
                         <div class="columns">
                             <div class="contact-option">
                                 <h3>
@@ -116,10 +129,10 @@
                                 </h3>
                             </div>  
                         </div>
-                        <div class="columns">
+                        <div class="column">
                             <div class="contact-form">
                                 <form>
-                                    <div class="desktop-two-columns">
+                                    <div class="desktop-two-columns mobile-two-columns">
                                         <div class="column">
                                             <div class="form-element">
                                                 <div class="form-element-label">
@@ -142,7 +155,7 @@
                                         </div>
                                     </div>
     
-                                    <div class="desktop-two-columns">
+                                    <div class="desktop-two-columns mobile-two-columns">
                                         <div class="column">
                                             <div class="form-element">
                                                 <div class="form-element-label">
@@ -164,7 +177,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="desktop-one-column">
+                                    <div class="desktop-one-column mobile-one-column">
                                         <div class="form-element">
                                             <div class="form-element-label">
                                                 <label>Mensaje</label>
@@ -172,9 +185,11 @@
                                             <div class="form-element-input">
                                                 <textarea name="message" id="" ></textarea>
                                             </div>
+                                            
                                         </div>
+                                        
                                     </div>
-                                    <div class="desktop-one-column">
+                                    <div class="desktop-one-column mobile-one-column">
                                         <div class="column">
                                             <div class="form-send-button">
                                                 <button>ENVIAR</button>

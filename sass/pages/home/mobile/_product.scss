@@ -1,7 +1,5 @@
 .product{
-    margin-top: 8rem ;
-    margin-bottom: 10rem;
-    overflow: hidden;
+    background: #FF6347;
     
 
     .product-carousel{  
@@ -28,6 +26,7 @@
             max-width: 100%;
             
             img{
+                margin-top: 1rem;
                 border-radius: 0.7rem;
             }
 
@@ -61,41 +60,29 @@
 
     .product-information{
         width: 80%;
-        margin-right: auto;
-        
-        div{
-            padding-bottom: 1rem;
-        }
+        margin: auto;
+        text-align: center;
 
         .product-title{
-            h2{
-                color: black;
-                font-weight: 600;
-                font-size:3.5rem;
-            }
+            margin-bottom: 1rem;
         }
 
         .product-price{
-            h3{
-                font-weight: 600;
-                font-size: 2rem
-            }
+            margin-bottom: 1rem;
         }
-
+        
         .product-description{
-            p{
-                font-size: 1.5rem
-            }
+            margin-bottom: 1rem;
         }
 
         .tab{
             display: flex;
-            
+            margin-bottom: 1rem;
             .tab-element{
                 cursor: pointer;
                 background: black;
                 color: white;
-                margin-left: 1rem;
+                
                 padding: 1rem 1rem;
 
                 
@@ -108,7 +95,7 @@
         }
 
         .panel{
-
+            
             .first{
                 background: blue;
                 display:block;
@@ -127,23 +114,19 @@
 
         }
 
-        
-
         .product-amount{
-            
+
             h4{
-                font-weight: 600;
-                font-size: 1.3rem
-                
+                margin-bottom: 1rem;
             }
-            
             .amount{
                 display: flex;
-                padding-top: 1rem;
-                
-                .less{
-                    button{
-                        cursor: pointer;
+                width: 65%;
+                margin-left: auto;
+                margin-bottom: 1rem;
+
+                button{
+                    cursor: pointer;
                         display: block;
                         width: 1.7rem;
                         height: 1.7rem;
@@ -158,15 +141,12 @@
                         font-weight: 800;
                         font-size: 1rem;
                         transition: all 0.15s ease-in-out;
-                        
-                    }
                 }
 
                 .number{
                     color: white;
                     font-weight: 600;
                     font-size: 1.6rem;
-                    margin-right: auto;
                     padding: 0rem 1rem 0.5rem 1rem;
                     width: 10%;
                     
@@ -174,42 +154,19 @@
                     .show{
                         text-align: center;
                         width: 100%;
-                        margin: auto;
+                       
                         
                     }
                 }
-                
-                .more{
-                   width: 100%;
-                    margin: auto;
-                    button{
-                        cursor: pointer;
-                        display: block;
-                        width: 1.7rem;
-                        height: 1.7rem;
-                        border: 1px solid #c4402f;
-                        border-radius: 4px;
-                        background-color: #CC4331;
-                        box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
-                        color: white;
-                        text-align: center;
-                        text-decoration: none;
-                        text-shadow: 0 -1px -1px #af3a2a;
-                        font-weight: 800;
-                        font-size: 1rem;
-                        transition: all 0.15s ease-in-out;
-
-                    }
-                }
             }
         }
-
         .buy{
-            display: flex;
-            .add-to-cart-button{
-                @include featuredButton(1rem);
+            @include featuredButton(1rem);
+            button{
+                margin-bottom: 1rem;
             }
-           
         }
     }
+
+    
 }

@@ -21,12 +21,14 @@
     
     @if $breakpoint == "xs" {
         @media (max-width:370px) {
+         
         @content;
         }
     }
 
     @else if $breakpoint == "md" {
         @media (min-width:767px) and (max-width:1280px) {
+        
         @content;
         }
     }
@@ -39,6 +41,7 @@
 
     @else if $breakpoint == "lg" {
         @media (min-width: 1920px) {
+            
         @content;
         }
     }

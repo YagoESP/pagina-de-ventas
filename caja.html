@@ -11,7 +11,7 @@
 
         <link href="style/normalize.css" rel="stylesheet">
         
-        <link rel="stylesheet" href="style/app.css">
+        <link rel="stylesheet" href="style/app-mobile.css">
         
     </head>
     
@@ -21,6 +21,20 @@
                 <div class="desktop-two-columns"> 
                     <div class="column">
                         <div class="header-main-logo">
+                            <div class="header-hamburguer mobile-only ">
+                                <div class="hamburger " id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul id="hamburger-menu mobile-only">
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>Home</li>
+                                    <li>home</li>
+                                  </ul>
+                                
+                            </div>
                             <div class="header-main-logo-title">
                                 <h1>P U
                                     <svg viewBox="0 0 24 24">
@@ -49,7 +63,7 @@
                             </div>        
                         </div>
                     </div>    
-                    <div class="column">
+                    <div class="column desktop-only">
                         <div class="header-main-menu">
                             <div class="header-main-menu-element ">
                                 <button>ARTÍCULOS</button>
@@ -72,11 +86,11 @@
                         <h2>Finalizar Compra</h2>
                     </div>
 
-                    <div class="desktop-two-columns">
+                    <div class="desktop-two-columns mobile-one-column">
                         <div class="column">
                             <div class="checkout-form">
                                 <form>
-                                    <div class="desktop-two-columns">
+                                    <div class="desktop-two-columns mobile-two-columns">
                                         <div class="column">
                                             <div class="form-element">
                                                 <div class="form-element-label">
@@ -99,7 +113,7 @@
                                         </div>
                                     </div>
     
-                                    <div class="desktop-two-columns">
+                                    <div class="desktop-two-columns mobile-two-columns">
                                         <div class="column">
                                             <div class="form-element">
                                                 <div class="form-element-label">
@@ -122,7 +136,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="desktop-two-columns">
+                                    <div class="desktop-two-columns mobile-two-columns">
                                         <div class="column">
                                             <div class="form-element">
                                                 <div class="form-element-label">
@@ -145,7 +159,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="desktop-one-columns">
+                                    <div class="desktop-one-columns mobile-one-column">
                                         <div class="column">
                                             <div class="form-element">
                                                 <div class="form-element-label">
@@ -204,11 +218,13 @@
                                         <input type="radio"> 
                                     <label for="">Tarjeta de crédito</label>
                                     </div>
+
+                                    <div class="pay-button">
+                                        <button>PAGAR</button>
+                                    </div>
                                 </div>
 
-                                <div class="pay-button">
-                                    <button>PAGAR</button>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

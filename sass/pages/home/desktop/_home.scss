@@ -7,6 +7,7 @@
         .slider-image {
             position: relative;
             display: inline-block;
+            @include respond-to(wsga);
         }    
 
         .slider-title {
@@ -58,10 +59,7 @@
             max-height: 100%;
             
 
-            &:hover{
-                transform: translateY(-5px);
-                box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4)
-            }
+            
             
 
             .home-cards-element-image{

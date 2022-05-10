@@ -2,6 +2,11 @@
     
     .slider{
         text-align: center;
+
+        .slider-image{
+            
+            
+        }
         .slider-title{
             margin-top: 1.5rem;
             h2{
@@ -12,6 +17,7 @@
         .slider-button{
             margin-top: 1rem;
             @include featuredButton(1rem);
+            
         }
         
     }
@@ -27,9 +33,16 @@
         }
 
         .home-cards-element{
-            
+            background: white;
             width: 80%;
             margin: 2rem auto 2rem auto;
+            transition: all .4s;
+            border-radius: 0.5rem; 
+
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4)
+            }
 
             .home-cards-element-image{
                 img{
@@ -48,8 +61,10 @@
 
             .home-cards-element-description{
                 margin-top: 0.5rem;
+                
                 p{
-                    
+                    color: black;
+                    font-weight: 400;
                 }
             }
         }
