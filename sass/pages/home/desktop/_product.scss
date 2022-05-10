@@ -88,43 +88,42 @@
             }
         }
 
-        .tab{
-            display: flex;
-            
-            .tab-element{
-                cursor: pointer;
-                background: black;
-                color: white;
-                margin-left: 1rem;
-                padding: 1rem 1rem;
-
+        .barratab{
+            box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+            .tabs{
+                display: flex;
+                justify-content: space-between;
                 
-            }
-            .active{
-                background: white;
-                color: black;
-            }
-            
-        }
-
-        .panel{
-
-            .first{
-                background: blue;
-                display:block;
-            }
-
-            display: none;
-            .panel-element{
+                .element{
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    background-color: #b5afc2;
+                    flex: 1;
+                    padding: 10px;
+                    cursor: pointer;
+                    user-select: none;
+    
+                    &:hover{
+                        background-color: #d3cce3;
+                    }
+                    &.active{
+                        background-color: #d3cce3;
+                    }
+                }
                 
             }
 
-            .show{
-                
-               
+            .tab-content{
+                background-color: #d3cce3;
+                padding: 10px;
+                border-radius: 0 0 4px 4px;
+                display: none;
+
+                &.active{
+                    display: block;
+                }
             }
-
-
+    
         }
 
         

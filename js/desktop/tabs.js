@@ -1,32 +1,30 @@
 export let renderTabs = () => {
 
-    let tabl = document.querySelectorAll(".tab-element")
-    let panel = document.querySelectorAll(".panel")
-    let tab = document.querySelectorAll(".tab")
-    let panell = document.querySelectorAll(".panel-element")
-    
-    
-    tabl.forEach(tab => {
-        
-        tab.addEventListener("click", () => {    
-            
-    
-            tabl.forEach(tab =>{
-    
-                tab.classList.remove("active");
-                
-            })
-            
-            tab.classList.add("active");
-    
-            panell.forEach(panel =>{
-                if(tabl.dataset.text == panel.dataset.text) {
-                    panel.classList.add("first");
-                }
-            })
+    document.querySelectorAll(".tabs").forEach((tab) => {
+        let tabl = tab.querySelectorAll(".element");
+        let content = tab.querySelectorAll(".content");
+      
+        let tabName;
+      
+        tabl.forEach((element) => {
+          element.addEventListener("click", () => {
+            tabl.forEach((item) => {
+              item.classList.remove("active");
+            });
+      
+            element.classList.add("active");
+      
+            tabName = element.getAttribute("data-tab");
+      
+            content.forEach((item) => {
+                item.classList.contains(tabName)
+                item.classList.add("active")
+                item.classList.remove("active");
+      
+            });
+          });
         });
-    
-        
-    });
+      });
+
 }
 

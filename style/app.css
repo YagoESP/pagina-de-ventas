@@ -712,10 +712,6 @@ form .form-send-button button:hover {
   border-radius: 0.5rem;
   max-height: 100%;
 }
-.home .home-cards .home-cards-element:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
-}
 .home .home-cards .home-cards-element .home-cards-element-image {
   padding-bottom: 2rem;
 }
@@ -969,25 +965,35 @@ form .form-send-button button:hover {
 .product .product-information .product-description p {
   font-size: 1.5rem;
 }
-.product .product-information .tab {
+.product .product-information .barratab {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+.product .product-information .barratab .tabs {
   display: flex;
+  justify-content: space-between;
 }
-.product .product-information .tab .tab-element {
+.product .product-information .barratab .tabs .element {
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #b5afc2;
+  flex: 1;
+  padding: 10px;
   cursor: pointer;
-  background: black;
-  color: white;
-  margin-left: 1rem;
-  padding: 1rem 1rem;
+  user-select: none;
 }
-.product .product-information .tab .active {
-  background: white;
-  color: black;
+.product .product-information .barratab .tabs .element:hover {
+  background-color: #d3cce3;
 }
-.product .product-information .panel {
+.product .product-information .barratab .tabs .element.active {
+  background-color: #d3cce3;
+}
+.product .product-information .barratab .tab-content {
+  background-color: #d3cce3;
+  padding: 10px;
+  border-radius: 0 0 4px 4px;
   display: none;
 }
-.product .product-information .panel .first {
-  background: blue;
+.product .product-information .barratab .tab-content.active {
   display: block;
 }
 .product .product-information .product-amount h4 {
