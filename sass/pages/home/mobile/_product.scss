@@ -75,23 +75,77 @@
             margin-bottom: 1rem;
         }
 
-        .tab{
-            display: flex;
-            margin-bottom: 1rem;
-            .tab-element{
-                cursor: pointer;
-                background: black;
-                color: white;
-                
-                padding: 1rem 1rem;
-
-                
-            }
-            .active{
-                background: white;
-                color: black;
-            }
+        .tabs {
             
+            display: flex;
+            justify-content: space-between;
+            :hover{
+               
+                transition: 1s;
+            }
+        
+            .tab {
+                
+                cursor: pointer;
+                padding: 0.5rem;
+                border-radius: 0.3rem;
+    
+                &.active {
+                    background-color: black;
+                }
+            }
+        }
+        
+        .contents {
+            margin: 1rem auto 1rem auto;
+            .content {
+                background-color: hsl(240, 9%, 40%);
+                width: 100%;
+                display: none;
+        
+                p {
+                    padding: 1rem;
+                    color: black;
+                }
+        
+                &.active {
+                    background-color: rgb(249, 249, 249);
+                    border-radius: 0.3rem;
+                    display: block;
+                }
+            }
+        }
+
+        .information{
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+
+            select{
+                
+                cursor: pointer;
+                background: #2A70D5;
+                border-radius: 4px;
+                box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
+                color: white;
+                padding: 0.7rem 4rem 0.7rem 4rem;
+                box-shadow:10px 10px 0px rgba(0,0,0,.1);
+                transition: all .4s;
+                
+                &:hover{
+                    transform: translateY(-3px);
+                    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+                }
+
+                option{
+                    background: white;
+                    border-radius: 4px;
+                    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
+                    color: #909dc2;
+                    cursor: pointer;
+                    
+                    
+                }
+            }
         }
 
         .panel{

@@ -867,15 +867,15 @@ form .form-send-button button:hover {
 
 .contact {
   padding-bottom: 5rem;
-  background: rgb(89, 171, 227);
+  background: hsl(226deg, 63%, 45%);
 }
 .contact .contact-title {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   text-align: center;
 }
 .contact .contact-title h2 {
-  color: black;
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .contact .contact-options {
   width: 85%;
@@ -897,9 +897,7 @@ form .form-send-button button:hover {
 }
 
 .product {
-  margin-top: 8rem;
-  margin-bottom: 10rem;
-  overflow: hidden;
+  margin-top: 3rem;
 }
 .product .product-carousel {
   text-align: center;
@@ -966,16 +964,20 @@ form .form-send-button button:hover {
   font-size: 1.5rem;
 }
 .product .product-information .tabs {
-  background-color: hsl(240deg, 9%, 40%);
   display: flex;
   justify-content: space-between;
+}
+.product .product-information .tabs :hover {
+  background-color: rgb(34, 30, 30);
+  transition: 1s;
 }
 .product .product-information .tabs .tab {
   cursor: pointer;
   padding: 1rem;
+  border-radius: 0.3rem;
 }
 .product .product-information .tabs .tab.active {
-  background-color: hsl(46deg, 100%, 20%);
+  background-color: black;
 }
 .product .product-information .contents .content {
   background-color: hsl(240deg, 9%, 40%);
@@ -985,9 +987,11 @@ form .form-send-button button:hover {
 }
 .product .product-information .contents .content p {
   padding: 1rem;
+  color: black;
 }
 .product .product-information .contents .content.active {
-  background-color: hsl(46deg, 100%, 20%);
+  background-color: rgb(249, 249, 249);
+  border-radius: 0.3rem;
   display: block;
 }
 .product .product-information .product-amount h4 {
@@ -1053,7 +1057,7 @@ form .form-send-button button:hover {
   display: flex;
 }
 .product .product-information .buy .add-to-cart-button button {
-  background: rgb(89, 171, 227);
+  background: hsl(226deg, 63%, 45%);
   border-radius: 0.5rem;
   border: white 3px solid;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
@@ -1188,7 +1192,7 @@ form .form-send-button button:hover {
   padding-right: 1rem;
 }
 .cart .payment .payment-buttons .back button {
-  background: rgb(89, 171, 227);
+  background: hsl(226deg, 63%, 45%);
   border-radius: 0.5rem;
   border: white 3px solid;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
@@ -1204,7 +1208,7 @@ form .form-send-button button:hover {
   transition: 0.2s all;
 }
 .cart .payment .payment-buttons .buy button {
-  background: rgb(89, 171, 227);
+  background: hsl(226deg, 63%, 45%);
   border-radius: 0.5rem;
   border: white 3px solid;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
@@ -1267,7 +1271,7 @@ form .form-send-button button:hover {
   font-weight: 600;
 }
 .check .pay .pay-button button {
-  background: rgb(89, 171, 227);
+  background: hsl(226deg, 63%, 45%);
   border-radius: 0.5rem;
   border: white 3px solid;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
@@ -1453,10 +1457,11 @@ form .form-send-button button:hover {
 .faqs .faq .question .title h3 {
   background: #3F51B5;
   font-size: 1.9rem;
+  margin-bottom: 1rem;
 }
 .faqs .faq .question .title .item {
-  width: 15px;
-  height: 10px;
+  width: 10px;
+  height: 15px;
   transition: -webkit-transform 0.8s;
   transition: transform 0.8s;
   transition: transform 0.8s, -webkit-transform 0.8s;

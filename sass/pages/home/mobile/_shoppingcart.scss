@@ -3,6 +3,9 @@
 
     .cart-title{
         text-align: center;
+        h2{
+            padding: 2rem;
+        }
     }
 
     .resume{
@@ -143,6 +146,7 @@
             display: flex;
             margin-top: 1rem;
             margin: auto;
+            padding-bottom: 2rem;
             
             .back{
                 @include featuredButton(1rem);

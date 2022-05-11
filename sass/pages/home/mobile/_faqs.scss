@@ -30,6 +30,7 @@
                 h3{
                     background: #3F51B5;
                     font-size: 1.9rem;
+                    
                 }
                 .item{
                     width: 25px;
@@ -43,9 +44,10 @@
                     border-right: 2px solid white;
                     position: relative;
                     -webkit-transform: rotate(45deg);
-                            transform: rotate(45deg);
+                    transform: rotate(45deg);
 
                     &.active{
+                        
                         transition: -webkit-transform 0.8s;
                         transition: transform 0.8s;
                         transition: transform 0.8s, -webkit-transform 0.8s;
@@ -58,11 +60,15 @@
    
             .content{
                 display: none;
-                    
+                transition: 5s;
                 &.active{
-                    transition: all 2s ease-out;
-                    display: block;
                     
+                    display:block;
+            
+                    
+                    transition: .5s;
+                    background: #FF6347;
+                   
                 }
             }   
         }

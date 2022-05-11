@@ -4,7 +4,7 @@
         text-align: center;
 
         .slider-image{
-            
+            width: 100%;
             
         }
         .slider-title{
@@ -61,8 +61,10 @@
 
             .home-cards-element-description{
                 margin-top: 0.5rem;
+                padding: 1rem;
                 
                 p{
+                    padding-bottom: 1rem;
                     color: black;
                     font-weight: 400;
                 }

@@ -1,7 +1,7 @@
 .product{
-    margin-top: 8rem ;
-    margin-bottom: 10rem;
-    overflow: hidden;
+    margin-top: 3rem ;
+    
+    
     
 
     .product-carousel{  
@@ -89,16 +89,23 @@
         }
 
         .tabs {
-            background-color: hsl(240, 9%, 40%);
+            
             display: flex;
             justify-content: space-between;
+            :hover{
+                background-color: rgb(34, 30, 30);
+                transition: 1s;
+            }
         
             .tab {
                 cursor: pointer;
                 padding: 1rem;
-        
+                border-radius: 0.3rem;
+
+                
+
                 &.active {
-                    background-color: hsl(46, 100%, 20%);
+                    background-color: black;
                 }
             }
         }
@@ -113,10 +120,12 @@
         
                 p {
                     padding: 1rem;
+                    color: black;
                 }
         
                 &.active {
-                    background-color: hsl(46, 100%, 20%);
+                    background-color: rgb(249, 249, 249);
+                    border-radius: 0.3rem;
                     display: block;
                 }
             }
