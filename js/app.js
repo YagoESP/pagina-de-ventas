@@ -7,7 +7,11 @@ import {renderCkeditor} from "./desktop/ckeditor.js";
 import {renderDelete} from "./desktop/delete";
 import {renderEdit} from "./desktop/edit";
 import {renderClean} from './desktop/clean.js';
+import {renderAccordion } from './desktop/accordion.js';
 
+
+
+renderAccordion();
 renderClean();
 renderDelete();
 renderEdit();

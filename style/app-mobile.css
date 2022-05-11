@@ -509,6 +509,7 @@ header .header-main .header-main-logo .header-hamburguer .hamburger span :nth-la
 header .header-main .header-main-logo .header-hamburguer #hamburger-menu {
   width: 100%;
   transition: 0.5s;
+  display: none;
 }
 header .header-main .header-main-logo .header-hamburguer #hamburger-menu li {
   padding: 0.5rem;
@@ -1210,6 +1211,64 @@ footer .footer-element .footer-element-socialmedia svg {
 }
 .admin .admin-panel .text-editor textarea {
   width: 50%;
+}
+
+.faqs {
+  background: #FF6347;
+}
+.faqs .faqs-title {
+  padding-top: 2rem;
+  text-align: center;
+}
+.faqs .faqs-title h2 {
+  margin-bottom: 3rem;
+}
+.faqs .faq {
+  background: #3F51B5;
+}
+.faqs .faq .question {
+  padding: 1.5em 1.5em;
+  color: white;
+  cursor: pointer;
+  font-size: 0.7em;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+.faqs .faq .question .title {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.faqs .faq .question .title h3 {
+  background: #3F51B5;
+  font-size: 1.9rem;
+}
+.faqs .faq .question .title .item {
+  width: 25px;
+  height: 10px;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.faqs .faq .question .title .item.active {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.faqs .faq .question .content {
+  display: none;
+}
+.faqs .faq .question .content.active {
+  transition: all 2s ease-out;
+  display: block;
 }
 
 .cart {

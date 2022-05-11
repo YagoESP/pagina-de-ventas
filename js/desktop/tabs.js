@@ -1,30 +1,21 @@
 export let renderTabs = () => {
 
-    document.querySelectorAll(".tabs").forEach((tab) => {
-        let tabl = tab.querySelectorAll(".element");
-        let content = tab.querySelectorAll(".content");
+  let tabs = document.querySelectorAll(".tab");
+  let contents = document.querySelectorAll(".content");
+
+  if (tabs) {
       
-        let tabName;
-      
-        tabl.forEach((element) => {
-          element.addEventListener("click", () => {
-            tabl.forEach((item) => {
-              item.classList.remove("active");
-            });
-      
-            element.classList.add("active");
-      
-            tabName = element.getAttribute("data-tab");
-      
-            content.forEach((item) => {
-                item.classList.contains(tabName)
-                item.classList.add("active")
-                item.classList.remove("active");
-      
-            });
+      tabs.forEach((tab, i) => {
+
+          tab.addEventListener("click", () => {
+
+              tabs.forEach((tab, i) => {
+                  contents[i].classList.remove("active");
+                  tab.classList.remove("active");
+              });
+              contents[i].classList.add("active");
+              tab.classList.add("active");
           });
-        });
       });
-
+  }
 }
-

@@ -1,10 +1,10 @@
-import ClassicEditor from '/@ckeditor/ckeditor5-build-classic';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export let renderCkeditor = () => {
 
   let editors = document.querySelectorAll(".editor");
 
-  editors.forEach(editor,()=>{
+  editors.forEach( editor => {
 
     ClassicEditor.create(editor)
 
