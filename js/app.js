@@ -11,6 +11,7 @@ import {renderAccordion } from './desktop/accordion.js';
 
 
 
+
 renderAccordion();
 renderClean();
 renderDelete();

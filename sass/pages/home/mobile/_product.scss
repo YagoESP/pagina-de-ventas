@@ -54,8 +54,7 @@
             &:hover{
                 background: white;
             }
-         }
-
+        }
     }
 
     .product-information{
@@ -119,6 +118,7 @@
         .information{
             padding-bottom: 1rem;
             padding-top: 1rem;
+            
 
             select{
                 
@@ -128,7 +128,6 @@
                 box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
                 color: white;
                 padding: 0.7rem 4rem 0.7rem 4rem;
-                box-shadow:10px 10px 0px rgba(0,0,0,.1);
                 transition: all .4s;
                 
                 &:hover{
@@ -143,30 +142,21 @@
                     color: #909dc2;
                     cursor: pointer;
                     
-                    
                 }
             }
-        }
 
-        .panel{
             
-            .first{
-                background: blue;
-                display:block;
+        } 
+
+        .information-related{
+                display: none;
+
+                &.active{
+                    padding: 3rem;
+                    display: block;
+                    background: blue;
+                }
             }
-
-            display: none;
-            .panel-element{
-                
-            }
-
-            .show{
-                
-               
-            }
-
-
-        }
 
         .product-amount{
 
@@ -208,8 +198,7 @@
                     .show{
                         text-align: center;
                         width: 100%;
-                       
-                        
+                         
                     }
                 }
             }
@@ -217,10 +206,8 @@
         .buy{
             @include featuredButton(1rem);
             button{
-                margin-bottom: 1rem;
+                margin-bottom: 3.5rem;
             }
         }
-    }
-
-    
+    } 
 }

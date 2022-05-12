@@ -1,18 +1,31 @@
 export let renderPlusMinusButton = () => {
 
-    let add = document.getElementById("add");
-    let subtract = document.getElementById("subtract");
-    let show = document.getElementById("show");
+    let adds = document.querySelectorAll(".add");
+    let substracts = document.querySelectorAll(".subtract");
     
-    add.addEventListener("click",() =>{
-        show.value = (parseInt(show.value) + 1)
-    })
+    if(adds){
+        adds.forEach(add => {
+            add.addEventListener("click", () => {
     
-    subtract.addEventListener("click",()=>{
-        
-        if(show.value > 1){
-            show.value = (parseInt(show.value) - 1)
-        }
-    })
+                let show = add.closest('.amount').querySelector('.show');
+    
+                show.value = (parseInt(show.value) + 1)
+            });
+        });
+    }
+    
+    if(substracts){
+        substracts.forEach(substract => {
+
+            substract.addEventListener("click", () => {
+            
+                let show = substract.closest('.amount').querySelector('.show');
+    
+                if(show.value > 1){
+                    show.value = (parseInt(show.value) - 1)
+                }
+            });
+        });
+    }
 
 }

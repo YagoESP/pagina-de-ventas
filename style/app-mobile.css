@@ -472,7 +472,7 @@ header .header-main .header-main-logo .header-hamburguer .hamburger {
   top: 10px;
   left: 30px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -507,21 +507,28 @@ header .header-main .header-main-logo .header-hamburguer .hamburger span :nth-la
   transform-origin: 0% 100%;
 }
 header .header-main .header-main-logo .header-hamburguer #hamburger-menu {
-  width: 100%;
-  transition: 0.5s;
-  display: none;
+  opacity: 0;
+  background: var(--nav-bg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: var(--height);
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  z-index: 1;
 }
 header .header-main .header-main-logo .header-hamburguer #hamburger-menu li {
   padding: 0.5rem;
   font-size: 1.3rem;
 }
 header .header-main .header-main-logo .header-hamburguer #hamburger-menu.active {
-  display: block;
+  opacity: 1;
   color: white;
   padding: 1rem;
-  padding-left: 8.5rem;
-  transition: 0.5s;
+  padding-left: 10rem;
+  padding-right: 9rem;
   background: #FF6347;
+  z-index: 1;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 header .header-main .header-main-logo .header-main-logo-title h1 svg {
   width: 2.3rem;
@@ -811,7 +818,6 @@ footer .footer-element .footer-element-socialmedia svg {
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
   color: white;
   padding: 0.7rem 4rem 0.7rem 4rem;
-  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
 }
 .product .product-information .information select:hover {
@@ -825,12 +831,13 @@ footer .footer-element .footer-element-socialmedia svg {
   color: #909dc2;
   cursor: pointer;
 }
-.product .product-information .panel {
+.product .product-information .information-related {
   display: none;
 }
-.product .product-information .panel .first {
-  background: blue;
+.product .product-information .information-related.active {
+  padding: 3rem;
   display: block;
+  background: blue;
 }
 .product .product-information .product-amount h4 {
   margin-bottom: 1rem;
@@ -886,7 +893,7 @@ footer .footer-element .footer-element-socialmedia svg {
   transition: 0.2s all;
 }
 .product .product-information .buy button {
-  margin-bottom: 1rem;
+  margin-bottom: 3.5rem;
 }
 
 .shop {
@@ -1331,11 +1338,13 @@ footer .footer-element .footer-element-socialmedia svg {
   -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   border-top: 2px solid white;
   border-right: 2px solid white;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   position: relative;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .faqs .faq .question .title .item.active {
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   transition: -webkit-transform 0.8s;
   transition: transform 0.8s;
   transition: transform 0.8s, -webkit-transform 0.8s;
@@ -1344,13 +1353,18 @@ footer .footer-element .footer-element-socialmedia svg {
   transform: rotate(135deg);
 }
 .faqs .faq .question .content {
-  display: none;
-  transition: 5s;
+  opacity: 0;
+  background: var(--nav-bg);
+  height: var(--height);
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  z-index: 1;
 }
 .faqs .faq .question .content.active {
-  display: block;
-  transition: 0.5s;
-  background: #FF6347;
+  opacity: 1;
+  color: white;
+  padding: 1rem;
+  z-index: 1;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .cart {

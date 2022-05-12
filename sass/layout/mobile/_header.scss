@@ -43,7 +43,7 @@ header{
                     top: 10px;
                     left: 30px;
                     cursor: pointer;
-                    z-index: 1;
+                    z-index: 2;
                     
                     -webkit-user-select: none;
                     user-select: none;
@@ -96,10 +96,16 @@ header{
                 }   
 
                 #hamburger-menu{
-                    width: 100%;
-                    transition: .5s;
-                    display: none;
+                    opacity: 0;
+                    background: var(--nav-bg);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: var(--height);
+                    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+                    z-index: 1;
                     
+
                     li{
                        
                         padding: 0.5rem;
@@ -107,16 +113,16 @@ header{
                     }
 
                     &.active{
-                        display:block;
+                        opacity: 1;
                         color: white;
                         padding: 1rem;
-                        padding-left: 8.5rem;
-                        transition: .5s;
+                        padding-left: 10rem;
+                        padding-right: 9rem;
                         background: #FF6347;
-                        
+                        z-index: 1;
+                        transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+
                     }
-
-
                 }  
             }
 
