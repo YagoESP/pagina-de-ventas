@@ -1,19 +1,42 @@
 export let renderSelect = () => {
-    let infoproducts = document.querySelectorAll('.information-product');
+    let infoproducts = document.querySelector('.informations-product');
+
+    console.log(infoproducts.options);
     
     if(infoproducts){
-        infoproducts.forEach(infoproduct =>{
 
-            infoproduct.addEventListener("change", () => {
-                
-                let infoRelated = document.querySelector('.information-related');
-          
-                if(infoproduct == infoRelated.dataset.related){
-                    infoRelated.classList.add('active');
+        infoproducts.addEventListener("change", () => {
+
+            let infoRelated = document.querySelectorAll('.information-related');
+
+            [...infoRelated].forEach(div => {
+                if(infoproducts.value === div.dataset.related){
+                    div.classList.add('active');
                 }else{
-                    infoRelated.classList.remove('active');
+                    div.classList.remove('active');
                 }
-            });
+            });  
         })
+        
+        // [...infoproducts.options].forEach(infoproduct =>{
+
+        //     console.log(infoproduct);
+
+            
+
+        //     infoproduct.addEventListener("click", () => {
+                
+        //         let infoRelated = document.querySelector('.information-related');
+        //         console.log(infoRelated);
+        //         console.log(infoRelated.dataset.related);
+          
+        //         // if(infoproduct.value === infoRelated.dataset.related){
+        //         //     infoRelated.classList.add('active');
+        //         // }else{
+        //         //     infoRelated.classList.remove('active');
+        //         // }
+
+        //     });
+        // })
     }
 }
